@@ -1,17 +1,36 @@
-const express = require("express");
-const cors = require("cors");
-require("dotenv").config();
-
-const port = 8000;
+import OpenAI from "openai";
+import express from "express";
+import cors from "cors";
+import bodyParser from "body-parser";
 
 const app = express();
+const port = 8080;
+app.use(bodyParser.json());
 app.use(cors());
-app.use(express.json());
 
-app.get("/", (req, res) => {
-  res.send("hello");
+const openai = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY,
+});
+
+app.post("/", async (request, response) => {
+  const { chats } = request.body;
+
+  const result = await openai.chat.completions.create({
+    model: "gpt-3.5-turbo",
+    messages: [
+      {
+        role: "system",
+        content: "You are Daniel, a doctor from Romania!",
+      },
+      ...chats,
+    ],
+  });
+
+  response.json({
+    output: result.choices[0].message,
+  });
 });
 
 app.listen(port, () => {
-  console.log(`Example at http://localhost:${port}`);
+  console.log(`Listening on port ${port}`);
 });
