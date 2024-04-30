@@ -2,6 +2,7 @@ import OpenAI from "openai";
 import express from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
+import "dotenv/config";
 
 const app = express();
 const port = 8080;
@@ -13,7 +14,7 @@ const openai = new OpenAI({
 });
 
 app.post("/", async (request, response) => {
-  const { chats } = request.body;
+  const { allMessages } = request.body;
 
   const result = await openai.chat.completions.create({
     model: "gpt-3.5-turbo",
@@ -22,7 +23,7 @@ app.post("/", async (request, response) => {
         role: "system",
         content: "You are Daniel, a doctor from Romania!",
       },
-      ...chats,
+      ...allMessages,
     ],
   });
 
