@@ -110,11 +110,11 @@ const AISimulator = () => {
                   </div>
                 )
             )}
-            {/* {isLoading && (
+            {isLoading && (
               <div className="card">
                 <div className="card-skeleton card-description"></div>
               </div>
-            )} */}
+            )}
             <div ref={msgEnd} />
           </div>
 
