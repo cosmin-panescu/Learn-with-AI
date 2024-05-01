@@ -1,11 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
+// style
 import "./AISimulator.scss";
-// AI custom instruction
-import { systemMessage } from "../../utils/data";
 // user and interviewer avatars
 import ai_avatar from "../../resources/ai.png";
 import user_avatar from "../../resources/user.png";
-import { Link } from "react-router-dom";
 
 const AISimulator = () => {
   // store current message
@@ -27,7 +26,7 @@ const AISimulator = () => {
 
     setMessage("");
 
-    fetch("http://localhost:8080/", {
+    fetch("http://localhost:5000/", {
       method: "post",
       headers: {
         "Content-Type": "application/json",
