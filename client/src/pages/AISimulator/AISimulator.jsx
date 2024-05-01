@@ -47,7 +47,8 @@ const AISimulator = () => {
 
   // send the message when press enter
   const handleEnter = async (e) => {
-    if (e.key === "Enter" && message.trim().length !== 0) await sendMessage();
+    if (e.key === "Enter" && message.trim().length !== 0)
+      await sendMessage(e, message);
   };
 
   // always scroll to the most recent chat message
