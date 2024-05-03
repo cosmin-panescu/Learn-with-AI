@@ -26,7 +26,7 @@ const AISimulator = () => {
 
     setMessage("");
 
-    fetch("http://localhost:5000/", {
+    fetch("https://learn-with-ai-3.onrender.com/", {
       method: "post",
       headers: {
         "Content-Type": "application/json",
