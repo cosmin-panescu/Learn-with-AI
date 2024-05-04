@@ -69,7 +69,7 @@ const AISimulator = () => {
             <span className="green box"></span>
           </div>
           <div className="tab">
-            <span>Interviu</span>
+            <span>Intervviu</span>
           </div>
           <div
             className="tab link"

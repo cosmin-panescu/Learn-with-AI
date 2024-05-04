@@ -14,11 +14,11 @@ const Quiz = () => {
 
   // technology for the quiz
   let technology =
-    paramNumber == 1
+    Number(paramNumber) === 1
       ? html
-      : paramNumber == 2
+      : Number(paramNumber) === 2
       ? css
-      : paramNumber == 3
+      : Number(paramNumber) === 3
       ? javascript
       : html;
 
