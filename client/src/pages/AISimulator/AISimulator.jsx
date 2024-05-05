@@ -12,7 +12,13 @@ const AISimulator = () => {
   // handle loading the answer from AI
   const [isLoading, setIsLoading] = useState(false);
   // store all messages
-  const [allMessages, setAllMessages] = useState([]);
+  const [allMessages, setAllMessages] = useState([
+    {
+      role: "assistant",
+      content:
+        "Alege tehnologia sau tehnologiile pentru care vrei sa fii intervievat.",
+    },
+  ]);
   // auto scroll when the answer is received
   const msgEnd = useRef(null);
 

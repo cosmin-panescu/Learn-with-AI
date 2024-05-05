@@ -34,11 +34,6 @@ app.post("/", async (request, response) => {
         Urmatoarea intrebare: Ce reprezinta box model?
         `,
       },
-      {
-        role: "assistant",
-        content:
-          "Alege tehnologia sau tehnologiile pentru care vrei sa fii intervievat.",
-      },
       ...allMessages,
     ],
   });
