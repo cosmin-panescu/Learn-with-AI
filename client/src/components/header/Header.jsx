@@ -10,8 +10,11 @@ const Header = () => {
     <div className="header">
       <div className="content">
         <h1>
-          <span>AI</span>nterviu
+          <span className="gradient">&lt; AI</span>
+          nterviu
+          <span className="gradient">/&gt;</span>
         </h1>
+
         <h2>Exersează pentru următorul tău interviu tehnic! 👨‍💻</h2>
 
         <button className="main-btn">

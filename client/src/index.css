@@ -35,6 +35,7 @@ body {
   background-color: rgba(114, 114, 114, 0.3);
 }
 
+/* MAIN BUTTON */
 .main-btn {
   margin-top: 100px;
   padding: 0.1em 0.25em;
@@ -46,7 +47,6 @@ body {
   font-size: 12.5px;
   cursor: pointer;
 }
-
 .main-btn span {
   text-decoration: none;
   position: relative;
@@ -68,7 +68,6 @@ body {
   transform: translate(0, 0.4em);
   box-shadow: 0 0 0 0 #f8f8f8;
 }
-
 .main-btn span:not(active) {
   transition: all 0.5s;
 }
