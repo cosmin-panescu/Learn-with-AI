@@ -10,7 +10,7 @@ const Header = () => {
     <div className="header">
       <div className="content">
         <h1>
-          Front-End <span>Developer</span>
+          <span>AI</span>nterviu
         </h1>
         <h2>Exersează pentru următorul tău interviu tehnic! 👨‍💻</h2>
 

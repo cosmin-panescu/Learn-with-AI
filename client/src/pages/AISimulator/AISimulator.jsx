@@ -66,7 +66,6 @@ const AISimulator = () => {
   // always scroll to the most recent chat message
   useEffect(() => {
     msgEnd.current.scrollIntoView({ behavior: "smooth" });
-    console.log(messagesNumber);
   }, [messagesNumber]);
 
   return (
