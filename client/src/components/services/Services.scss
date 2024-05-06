@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
 
 .services {
-  padding: 0 150px;
+  padding: 100px 150px 0 150px;
   width: 100%;
-  min-height: 125vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 85px;
   align-items: center;
 
   background: #121212;
@@ -42,6 +43,7 @@
       width: 50vw;
       text-align: center;
       font-weight: 300;
+      line-height: 125%;
 
       .correct {
         color: lightgreen;
@@ -57,19 +59,24 @@
 
   .content {
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-around;
 
+    h3 {
+      font-family: "Kalam";
+    }
+
     & > * {
+      margin-top: 30px;
       padding: 35px 15px 30px 60px;
       line-height: 140%;
-      font-family: "Kalam", cursive;
       font-weight: 800;
       font-size: 25px;
-      border-radius: 7px;
+      border-radius: 7px 7px 0 0;
       width: 40%;
-      height: 70vh;
       color: #222;
+      transition: all 0.5s ease;
       background: #f1f1f1;
       background-image: linear-gradient(
           90deg,
@@ -80,21 +87,17 @@
         ),
         linear-gradient(#e1e1e1 0.1em, transparent 0.1em);
       background-size: 100% 30px;
+
+      &:hover {
+        margin-top: 0;
+      }
     }
 
-    .left {
+    .links {
+      margin-top: 50px;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
     }
-
-    .right {
-    }
-  }
-}
-
-@keyframes move {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 40px 40px;
   }
 }

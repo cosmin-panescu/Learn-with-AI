@@ -11,29 +11,35 @@ const Services = () => {
           Nu iti face griji! Fie ca raspunzi{" "}
           <span className="correct">corect</span> sau{" "}
           <span className="wrong">nu</span>, vei primi si explicatia conceptului
-          respectiv, astfel incat sa si inveti in procesul de exersare.
+          respectiv, astfel incat sa inveti in procesul de exersare.
         </p>
       </div>
 
       <div className="content">
         <div className="left">
           <h3>Întrebări cu răspuns multiplu</h3>
-          <Link className="link-btn" to="/test/1">
-            HTML
-          </Link>
-          <Link className="link-btn" to="/test/2">
-            CSS
-          </Link>
-          <Link className="link-btn" to="/test/3">
-            JavaScript
-          </Link>
+
+          <div className="links">
+            <Link className="link-btn second-btn" to="/test/1">
+              <span className="button-top">HTML</span>
+            </Link>
+            <Link className="link-btn second-btn" to="/test/2">
+              <span className="button-top">CSS</span>
+            </Link>
+            <Link className="link-btn second-btn" to="/test/3">
+              <span className="button-top">JavaScript</span>
+            </Link>
+          </div>
         </div>
 
         <div className="right">
           <h3>Simulare AI interviu tehnic</h3>
-          <Link className="link-btn" to="/simulare-AI">
-            simulare AI
-          </Link>
+
+          <div className="links">
+            <Link className="link-btn second-btn" to="/simulare-AI">
+              <span className="button-top">Simulare AI</span>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
