@@ -11,6 +11,8 @@ const AISimulator = () => {
   const [message, setMessage] = useState("");
   // handle loading the answer from AI
   const [isLoading, setIsLoading] = useState(false);
+  // increment number of messages (helpful for auto scroll)
+  const [messagesNumber, setMessagesNumber] = useState(0);
   // store all messages
   const [allMessages, setAllMessages] = useState([
     {
@@ -25,29 +27,34 @@ const AISimulator = () => {
   const sendMessage = async (e, message) => {
     if (!message) return;
     setIsLoading(true);
+    setMessagesNumber((prev) => prev + 1);
 
     let msgs = allMessages;
     msgs.push({ role: "user", content: message });
+
     setAllMessages(msgs);
 
     setMessage("");
 
-    fetch("https://learn-with-ai-3.onrender.com/", {
-      method: "post",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        allMessages,
-      }),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        msgs.push(data.output);
-        setAllMessages(msgs);
-        setIsLoading(false);
-      })
-      .catch((error) => console.log(error));
+    try {
+      const response = await fetch("https://learn-with-ai-3.onrender.com/", {
+        method: "post",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          allMessages,
+        }),
+      });
+
+      const data = await response.json();
+      msgs.push(data.output);
+      setAllMessages(msgs);
+      setIsLoading(false);
+      setMessagesNumber((prev) => prev + 1);
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   // send the message when press enter
@@ -58,8 +65,9 @@ const AISimulator = () => {
 
   // always scroll to the most recent chat message
   useEffect(() => {
-    msgEnd.current.scrollIntoView();
-  }, [allMessages]);
+    msgEnd.current.scrollIntoView({ behavior: "smooth" });
+    console.log(messagesNumber);
+  }, [messagesNumber]);
 
   return (
     <div className="simulator">

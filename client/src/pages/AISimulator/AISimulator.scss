@@ -105,7 +105,7 @@
     .chat-content {
       padding: 25px;
       width: 100%;
-      height: calc(100% - 25px);
+      height: calc(100% - 34px);
       display: flex;
       gap: 15px;
       flex-direction: column;
@@ -117,7 +117,6 @@
         gap: 15px;
         color: #f1f1f1;
         overflow: auto;
-        scroll-behavior: smooth;
 
         &::-webkit-scrollbar {
           display: none;
