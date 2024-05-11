@@ -7,6 +7,8 @@ import { Link, useParams } from "react-router-dom";
 // Code snippet
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
+// finish test confetti
+import ConfettiExplosion from "react-confetti-explosion";
 
 const Quiz = () => {
   const params = useParams();
@@ -70,7 +72,7 @@ const Quiz = () => {
     setShowExplanation(false);
 
     if (lock) {
-      if (questionCount === 15) {
+      if (questionCount === 1) {
         setResult(true);
         return 0; // if we return 0, the next statements won't be executed
       }
@@ -107,14 +109,21 @@ const Quiz = () => {
 
   return (
     <div className="quiz">
+      {result && (
+        <div className="confetti">
+          <ConfettiExplosion particleCount={200} duration={4000} />
+        </div>
+      )}
       <div className="wrapper">
         <div className="quiz-wrapper">
           <div className="quiz-container">
             {result ? (
-              <>
+              <div className="quiz-final">
                 <h3>Ai raspuns corect la {score} intrebari din 15. </h3>
-                <button onClick={resetQuiz}>Incearca din nou!</button>
-              </>
+                <button className="second-btn" onClick={resetQuiz}>
+                  <span className="button-top">Incearca din nou</span>
+                </button>
+              </div>
             ) : (
               <>
                 <h2>

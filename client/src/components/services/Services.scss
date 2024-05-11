@@ -68,6 +68,7 @@
     }
 
     & > * {
+      box-shadow: 1px 0px 26px 17px rgba(0, 0, 0, 1);
       margin-top: 30px;
       padding: 35px 15px 30px 60px;
       line-height: 140%;
@@ -91,6 +92,10 @@
       &:hover {
         margin-top: 0;
       }
+    }
+
+    .button-top {
+      padding: 0.4em 1.5em;
     }
 
     .links {
