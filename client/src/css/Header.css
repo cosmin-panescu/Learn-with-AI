@@ -1,0 +1,35 @@
+.header {
+  height: 100vh;
+  width: 100%;
+  --color: rgba(114, 114, 114, 0.3);
+  background-color: #191a1a;
+  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
+  background-size: 55px 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .content {
+  color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header .content h1 {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 8rem;
+  text-align: center;
+}
+.header .content h1 span {
+  background: #f8f8f8;
+  background: linear-gradient(to top right, #f8f8f8 17%, #00cf06 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.header .content h2 {
+  font-size: 2rem;
+  font-weight: 300;
+}/*# sourceMappingURL=Header.css.map */
