@@ -9,6 +9,8 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 // finish test confetti
 import ConfettiExplosion from "react-confetti-explosion";
+// typewriter effect
+import TypeWriterEffect from "react-typewriter-effect";
 
 const Quiz = () => {
   const params = useParams();
@@ -72,7 +74,7 @@ const Quiz = () => {
     setShowExplanation(false);
 
     if (lock) {
-      if (questionCount === 1) {
+      if (questionCount === 15) {
         setResult(true);
         return 0; // if we return 0, the next statements won't be executed
       }
@@ -192,7 +194,18 @@ const Quiz = () => {
               </Link>
             </div>
             <div className="explanation-text">
-              {showExplanation && <p>{question.explanation}</p>}
+              {showExplanation && (
+                <TypeWriterEffect
+                  textStyle={{
+                    fontFamily: "Poppins",
+                    fontSize: 16,
+                    fontWeight: 400,
+                  }}
+                  text={question.explanation}
+                  typeSpeed={30}
+                  hideCursorAfterText={true}
+                />
+              )}
             </div>
           </div>
         </div>

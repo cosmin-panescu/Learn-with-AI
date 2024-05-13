@@ -5,6 +5,8 @@ import "./AISimulator.scss";
 // user and interviewer avatars
 import ai_avatar from "../../resources/ai.png";
 import user_avatar from "../../resources/user.png";
+// typewriter effect
+import TypeWriterEffect from "react-typewriter-effect";
 
 const AISimulator = () => {
   // store current message
