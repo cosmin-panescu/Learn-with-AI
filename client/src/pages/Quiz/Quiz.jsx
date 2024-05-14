@@ -71,6 +71,7 @@ const Quiz = () => {
   };
 
   const nextQuestion = () => {
+    // console.log(html.length + css.length + javascript.length);
     setShowExplanation(false);
 
     if (lock) {
