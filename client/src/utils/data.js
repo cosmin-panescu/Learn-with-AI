@@ -449,11 +449,35 @@ export const html = [
     question: "Este recomandat sa incluzi doar un singur <h1> in pagina web?",
     option1: `Desigur`,
     option2: `Nu este recomandat`,
-    option3: `reduce`,
-    option4: `some`,
-    answer: 4,
+    option3: `Nu exista o regula clara`,
+    option4: `Trebuie incluse cat mai multe tag-uri <h1>`,
+    answer: 1,
     explanation:
       " un singur element <h1> pe pagina web este o practică recomandată deoarece promovează o structură web clară și sănătoasă. Oferă beneficii pentru SEO, accesibilitate și experiența utilizatorului. Un singur <h1> clarifică subiectul principal al paginii pentru motoarele de căutare, ajută utilizatorii de cititoare de ecran să navigheze și creează o ierarhie vizuală distinctă, îmbunătățind scanabilitatea paginii.",
+  },
+  {
+    question: "Care este scopul atributului 'async' in tag-urile script?",
+    option1: `De a incarca scriptul in mod asincron, fara a bloca incarcarea codului HTML`,
+    option2: `De a executa script in fundal`,
+    option3: `De a amana executia scriptului pana la finalizarea incarcarii codului HTML`,
+    option4: `De a prioritiza incarcarea scriptului peste alte resurse`,
+    answer: 1,
+    explanation: `
+      -Atributul "async" din tag-urile HTML script este utilizat pentru a incarca scriptul in mod asincron, permitand browserului sa continue analizarea si redarea continutului HTML fara a astepta incarcarea sau executarea scriptului.
+      `,
+  },
+  {
+    question:
+      "Ce atribut este utilizat pentru a specifica URL-ul paginii catre care vei fi redirectionat?",
+    option1: `src`,
+    option2: `href`,
+    option3: `link`,
+    option4: `url`,
+    answer: 2,
+    explanation: `
+      - In HTML, atributul 'href' este folosit pentru a specifica URL-ul paginii unde dorim sa mergem. 
+      - In plus, daca este setat si atributul target="_blank", link-ul se va deschide intr-un tab nou.
+      `,
   },
 ];
 
@@ -556,6 +580,20 @@ export const css = [
       "Proprietatea 'position' controleaza modul in care un element este pozitionat in pagina web. Cand este setat pe 'absolute' sau 'fixed', elementul este eliminat complet din flow-ul normal al documentului. Cand aceasta proprietate este setata pe 'relative', elementul este mutat relativ la pozitia sa, in flow-ul normal al documentului. Valoarea initiala, default, este 'static', insemnand ca elementul ramane in flow-ul normal al documentului si nu este pozitionat.",
   },
   {
+    question: "Care este forma intreaga pentru 'RGB'?",
+    option1: `Red Green Black`,
+    option2: `Red Gray Black`,
+    option3: `Red Green Blue`,
+    option4: `Toate de mai sus sunt corecte`,
+    answer: 3,
+    explanation: `
+      - RGB în CSS este o modalitate de a specifica culorile folosind o combinație de roșu (Red), verde (Green) și albastru (Blue).
+      - Fiecare componentă (R, G sau B) poate avea o valoare între 0 și 255, reprezentând intensitatea culorii respective.
+      - Prin combinarea acestor trei culori în proporții diferite, poți crea o gamă largă de culori în designul web. 
+      - De exemplu, rgb(255, 0, 0) reprezintă roșu complet, rgb(0, 255, 0) reprezintă verde complet, iar rgb(0, 0, 255) reprezintă albastru complet.
+      `,
+  },
+  {
     question: "Ce proprietate CSS este folosita pentru a face textul bold?",
     option1: `text-decoration: bold;`,
     option2: `font-weight: bold;`,
@@ -564,6 +602,17 @@ export const css = [
     answer: 2,
     explanation:
       "Proprietatea 'font-weight' este folosita pentru a seta grosimea fontului. Grosimea dispoibila pentru text depinde de font-ul folosit (font-family).",
+  },
+  {
+    question: "Cum poti realiza un efect text 3D in HTML si CSS?",
+    option1: `Folosind tag-ul <3dtext>t in HTML`,
+    option2: `Aplicand proprietatea 'text-3d' in CSS`,
+    option3: `Utilizand proprietati CSS precum 'text-shadow' si 'transform'`,
+    option4: `Folosind tag-ul <3d> in HTML`,
+    answer: 3,
+    explanation: `
+      - Pentru a obtine un effect 3D pentru text in HTML si CSS, poti folosi proprietati CSS precum 'text-shadow' (unde adaugi 'adancime') si 'transform' (pentru a manipula perspectiva si rotatia textului).
+      `,
   },
   {
     question: "Ce metode sunt folosite pentru a reprezenta culori in CSS?",
@@ -930,7 +979,14 @@ export const javascript = [
     explanation: `
     - În JavaScript, Array.pop() este o metodă utilizată pentru a elimina ultimul element dintr-un array și a returna valoarea eliminată.
     - Dacă arrayul este gol (nu are elemente), pop() returnează undefined.
-    - pop() modifică arrayul original.`,
+    - pop() modifică arrayul original.
+    
+    const fructe = ['Mere','Pere','Mango','Ananas'];
+    const eliminareFruct = fructe.pop();
+
+    console.log(eliminareFruct); // Ananas
+    console.log(fructe); // ['Mere','Pere','Mango'];
+    `,
   },
   {
     question: "Care este scopul functiei isNaN(), in JavaScript?",
@@ -1239,6 +1295,71 @@ export const javascript = [
     - În JavaScript, un set este o colecție de valori unice, ceea ce înseamnă că nu poate conține duplicate ale aceluiași element.
     - Acesta este similar cu un array, dar cu două diferențe majore: în primul rând, un set nu menține ordinea elementelor sale (elementele sunt sortate implicit în ordinea lor de inserare), iar în al doilea rând, un set nu permite accesul la elemente prin index, deoarece nu sunt indexate.
     - Set-urile sunt utile atunci când lucrăm cu o mulțime de valori distincte și vrem să ne asigurăm că fiecare valoare apare doar o singură dată în colecție. 
+    `,
+  },
+  {
+    question: "Ce presupune functia fetch()?",
+    option1: `Executa o anumita functie asupra fiecarui element dintr-un array`,
+    option2: `Aplica o anumita functie elementelor unui array si returneaza noul array, modificat`,
+    option3: `Obtine/Extrage resurse de la un server`,
+    option4: `Converteste un array intr-un string`,
+    answer: 3,
+    explanation: `
+    - Functia fetch() în JavaScript este folosită pentru a face cereri HTTP către servere web și pentru a obține răspunsuri.
+    - Poți trimite cereri GET, POST, PUT, DELETE și altele folosind fetch().
+    -  fetch() returnează un răspuns primit de la server, permițându-ți să procesezi datele în codul tău JavaScript.
+    `,
+  },
+  {
+    question: "Ce va afisa codul urmator?",
+    code: `
+    console.log(a);
+    var a = 10;
+    `,
+    option1: `undefined`,
+    option2: `a`,
+    option3: `10`,
+    option4: `Eroare la declarare`,
+    answer: 1,
+    explanation: `
+    - Chiar daca 'a' este declarat mai tarziu in cod, este inca accesibil in 'partea de sus' a scopului in care se afla, datorita conceptului de hoisting.
+    - Cu toate acestea, valoarea lui 'a' nu este definita pana cand i se atribuie efectiv o valoare, motiv pentru care se va afisa 'undefined', adica nedefinit.
+    - Deci, a este recunoscut (deci vede faptul ca este declarat), insa nu ii este cunoscuta inca valoarea.
+    - Acest concept se aplica variabilelor declarate cu 'var'. Pentru 'let'si 'const' nu este la fel. 
+    `,
+  },
+  {
+    question: "Care va fi rezultatul urmatorului cod?",
+    code: `
+    var a = [1,2,3];
+    var b = [1,2,3];
+    console.log(a == b);
+    `,
+    option1: `true`,
+    option2: `false`,
+    option3: `Error`,
+    option4: `Array-urile nu se pot compara asa`,
+    answer: 2,
+    explanation: `
+    - Aceasta intrebare testeaza cunostintele despre compararea array-urilor in JavaScript.
+    - Chiar daca 'a' si 'b' contin aceleasi valori, array-urile sunt tipuri de referinta.
+    - Cand compari doua array-uri folosind operatorul de egalitate, se verifica daca amandoi operanzii fac referire la acelasi array din memorie.
+    - In cazul nostru, 'a' si 'b' fac referire la spatii diferite de memorie, deoarece sunt stocate in locuri diferite, fiind recunoscute drept doua array-uri diferite. 
+    `,
+  },
+  {
+    question:
+      "Ce metoda HTTP este folosita de obicei pentru a extrage date de la un API?",
+    option1: `GET`,
+    option2: `POST`,
+    option3: `PUT`,
+    option4: `DELETE`,
+    answer: 1,
+    explanation: `
+    - Metoda HTTP GET în JavaScript este folosită pentru a trimite cereri de tip GET către un server web pentru a obține date.
+    - Această cerere este utilizată în principal pentru a solicita resurse, cum ar fi fișierele HTML, imagini, scripturi sau alte tipuri de date, dintr-un server. 
+    -  Pentru a efectua o cerere GET în JavaScript, poți utiliza diferite metode, precum XMLHttpRequest sau fetch().
+    - 
     `,
   },
   {
