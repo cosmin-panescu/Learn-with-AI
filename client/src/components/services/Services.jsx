@@ -22,7 +22,7 @@ const Services = () => {
             • 150+ intrebari
             <br />
             • explicatie pentru fiecare intrebare
-            <br />• link atasat fiecarei explicatii, pentru aprofundare
+            <br />• link extern pentru aprofundarea conceptelor
           </p>
           <div className="links">
             <Link className="link-btn second-btn" to="/test/1">
@@ -43,7 +43,7 @@ const Services = () => {
             • GPT-3.5-Turbo
             <br />
             • simulare interviu real
-            <br />• feedback personalizat in functie de performanta
+            <br />• feedback personalizat
           </p>
           <div className="links">
             <Link className="link-btn second-btn" to="/simulare-AI">
