@@ -159,30 +159,31 @@
 // button
 .quiz {
   .link-btn {
-    align-items: center;
-    background-color: transparent;
     color: #191a1a;
     cursor: pointer;
-    display: flex;
-    position: absolute;
     font-size: 1.15rem;
     font-weight: 500;
-    line-height: 1.5;
-    top: 26.7px;
-  }
+    position: absolute;
+    padding: 0 5px;
+    border-bottom: 12px solid rgba(144, 238, 144, 0.582);
+    line-height: 10%;
+    transition: all 0.25s ease;
 
-  .link-btn:before {
-    background-color: #191a1a;
-    content: "";
-    margin-right: 10px;
-    display: inline-block;
-    height: 1.75px;
-    transition: all 0.42s cubic-bezier(0.25, 0.8, 0.25, 1);
-    width: 0;
-  }
+    &.home {
+      top: 39.5px;
+    }
 
-  .link-btn:hover:before {
-    background-color: #191a1a;
-    width: 3rem;
+    &.learn {
+      bottom: 32px;
+      padding: 0px;
+    }
+
+    &:hover {
+      border-bottom: 12px solid lightgreen;
+    }
   }
+}
+
+.display-linebreak {
+  white-space: pre-line;
 }

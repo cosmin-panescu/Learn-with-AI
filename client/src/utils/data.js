@@ -8,11 +8,7 @@ export const html = [
     option4: "<h6>",
     answer: 2,
     explanation: `
-    - Tag-ul <h1> este utilizat pentru a defini cel mai important titlu dintr-o pagină web.\n 
-    - De obicei, textul afișat cu <h1> este ilustrat cu o dimensiune mai mare și cu un stil mai pronunțat decât alt text de pe pagină, indicând importanța sa.\n
-    - De asemenea, motoarele de căutare acordă o atenție sporită textului dintr-un tag <h1>, astfel încât este recomandat să fie folosit cu atenție și să conțină cuvinte cheie relevante pentru conținutul paginii.
-    `,
-    link: `https://organic-agency.ro/dictionar-seo/marcaj-h1/`,
+    - Tag-ul <h1> este utilizat pentru a defini cel mai important titlu dintr-o pagină web.\n- De obicei, textul afișat cu <h1> este ilustrat cu o dimensiune mai mare și cu un stil mai pronunțat decât alt text de pe pagină, indicând importanța sa.\n- De asemenea, motoarele de căutare acordă o atenție sporită textului dintr-un tag <h1>, astfel încât este recomandat să fie folosit cu atenție și să conțină cuvinte cheie relevante pentru conținutul paginii.`,
   },
   {
     question: "Ce tag-uri HTML sunt folosite pentru a crea meniul drop-down?",
@@ -22,12 +18,8 @@ export const html = [
     option4: "<list>, <item>",
     answer: 2,
     explanation: `
-    - Pentru a crea un meniu dropdown, tagurile principale utilizate sunt <select> și <option>.\n
-    - Tag-ul <select> definește un meniu de selecție, iar în interiorul acestuia sunt plasate tagurile <option>.\n
-    - Fiecare tag <option> reprezintă o opțiune din meniul dropdown și poate fi selectată de utilizator.\n
-    - Împreună, aceste taguri creează o interfață de selecție convenabilă pentru utilizatori, cu opțiunea de a alege dintr-o listă predefinită de valori.
+    - Pentru a crea un meniu dropdown, tagurile principale utilizate sunt <select> și <option>.\n- Tag-ul <select> definește un meniu de selecție, iar în interiorul acestuia sunt plasate tagurile <option>.\n- Fiecare tag <option> reprezintă o opțiune din meniul dropdown și poate fi selectată de utilizator.\n- Împreună, aceste taguri creează o interfață de selecție convenabilă pentru utilizatori, cu opțiunea de a alege dintr-o listă predefinită de valori.
     `,
-    link: `https://blog.hubspot.com/website/html-dropdown`,
   },
   {
     question: "Ce tag HTML5 nu exista?",
@@ -37,9 +29,7 @@ export const html = [
     option4: "container",
     answer: 4,
     explanation: `
-    - Termenul "container" nu reprezintă un tag propriu-zis, ci mai degrabă este folosit pentru a descrie un element sau o secțiune care încadrează și organizează conținutul.\n
-    - De exemplu, tagurile <div> sau <section> pot fi considerate containere în HTML deoarece sunt utilizate pentru a grupa și organiza alte elemente sau conținut în interiorul lor.\n
-    - Deși termenul "container" nu este un element HTML în sine, este adesea folosit pentru a indica un element care are rolul de a conține și structura alte elemente.
+    - Termenul "container" nu reprezintă un tag propriu-zis, ci mai degrabă este folosit pentru a descrie un element sau o secțiune care încadrează și organizează conținutul.\n- De exemplu, tagurile <div> sau <section> pot fi considerate containere în HTML deoarece sunt utilizate pentru a grupa și organiza alte elemente sau conținut în interiorul lor.\n- Deși termenul "container" nu este un element HTML în sine, este adesea folosit pentru a indica un element care are rolul de a conține și structura alte elemente.
     `,
   },
   {
@@ -50,11 +40,8 @@ export const html = [
     option4: `<a href="user@email.com>" user@email.com </a>`,
     answer: 2,
     explanation: `
-    - Pentru a declara un link către o adresă de email în HTML, folosești tag-ul <a> împreună cu atributul href.\n
-    - În loc să furnizezi o adresă URL ca valoare a atributului href, vei furniza adresa de email folosind prefixul "mailto:".\n
-    - Astfel, atunci când utilizatorii dau clic pe link, programul implicit de email al utilizatorului va fi deschis, iar adresa de email va fi pre-populată în câmpul "To".
+    - Pentru a declara un link către o adresă de email în HTML, folosești tag-ul <a> împreună cu atributul href.\n- În loc să furnizezi o adresă URL ca valoare a atributului href, vei furniza adresa de email folosind prefixul "mailto:".\n- Astfel, atunci când utilizatorii dau clic pe link, programul implicit de email al utilizatorului va fi deschis, iar adresa de email va fi pre-populată în câmpul "To".
     `,
-    link: `https://www.tutorialspoint.com/html/html_email_links.htm`,
   },
   {
     question: "De la ce vine HTML?",
@@ -64,12 +51,8 @@ export const html = [
     option4: "Hyper Tool Markul Language",
     answer: 1,
     explanation: `
-    - HTML este acronimul pentru "HyperText Markup Language".\n 
-    - A fost creat în 1989 de către cercetătorul britanic Tim Berners-Lee, care a lucrat la CERN (Organizația Europeană pentru Cercetare Nucleară).\n
-    - HTML a fost conceput ca un limbaj simplu pentru a permite cercetătorilor să împărtășească documente între ei prin intermediul unei rețele informatice numite "World Wide Web" (www).\n 
-    - De-a lungul timpului, HTML a evoluat și a devenit unul dintre limbajele de bază pentru crearea și structurarea paginilor web.
+    - HTML este acronimul pentru "HyperText Markup Language".\n- A fost creat în 1989 de către cercetătorul britanic Tim Berners-Lee, care a lucrat la CERN (Organizația Europeană pentru Cercetare Nucleară).\n- HTML a fost conceput ca un limbaj simplu pentru a permite cercetătorilor să împărtășească documente între ei prin intermediul unei rețele informatice numite "World Wide Web" (www).\n- De-a lungul timpului, HTML a evoluat și a devenit unul dintre limbajele de bază pentru crearea și structurarea paginilor web.
     `,
-    link: `https://web.ceiti.md/lesson.php?id=1`,
   },
   {
     question: "Ce tag-uri nu au tag de inchidere in HTML?",
@@ -79,10 +62,8 @@ export const html = [
     option4: "aside, img, option",
     answer: 3,
     explanation: `
-    - Există câteva taguri care nu necesită un tag de închidere, fiind cunoscute sub denumirea de "self-closing tags".\n
-    - Printre aceste taguri se numără: img, br, input, hr, meta.
+    - Există câteva taguri care nu necesită un tag de închidere, fiind cunoscute sub denumirea de "self-closing tags".\n- Printre aceste taguri se numără: img, br, input, hr, meta.
     `,
-    link: `https://developer.mozilla.org/en-US/docs/Glossary/Void_element`,
   },
   {
     question: "Care dintre tag-uri sunt inline?",
@@ -92,12 +73,8 @@ export const html = [
     option4: "img, div",
     answer: 1,
     explanation: `
-    - Tagurile "inline" sunt acele taguri care nu determină o schimbare a structurii blocului de text în care sunt plasate.\n 
-    - Exemple de taguri inline: <span>, <a>, <strong>, <em>, <img>, <input>, <br> și <i>.\n 
-    - Aceste taguri sunt adesea utilizate pentru a formata sau marca porțiuni specifice de text sau pentru a insera elemente mici de conținut, cum ar fi link-uri, imagini sau butoane, în cadrul altor elemente HTML.\n
-    - Spre deosebire de tagurile "block", care ocupă întreaga lățime disponibilă, tagurile "inline" rămân în același rând și se adaptează la conținutul pe care îl conțin.
+    - Tagurile "inline" sunt acele taguri care nu determină o schimbare a structurii blocului de text în care sunt plasate.\n- Exemple de taguri inline: <span>, <a>, <strong>, <em>, <img>, <input>, <br> și <i>.\n- Aceste taguri sunt adesea utilizate pentru a formata sau marca porțiuni specifice de text sau pentru a insera elemente mici de conținut, cum ar fi link-uri, imagini sau butoane, în cadrul altor elemente HTML.\n- Spre deosebire de tagurile "block", care ocupă întreaga lățime disponibilă, tagurile "inline" rămân în același rând și se adaptează la conținutul pe care îl conțin.
     `,
-    link: `https://www.w3schools.com/html/html_blocks.asp`,
   },
   {
     question:
@@ -108,10 +85,8 @@ export const html = [
     option4: "<link rel='stylesheet.css' type='stylesheet'>",
     answer: 4,
     explanation: `
-    - Modalitatea corectă de a face referire la un style sheet extern în HTML este prin adăugarea unui element <link> în secțiunea <head> a documentului HTML.\n 
-    - Atributul href al tagului <link> trebuie să indice calea către fișierul CSS extern.
+    - Modalitatea corectă de a face referire la un style sheet extern în HTML este prin adăugarea unui element <link> în secțiunea <head> a documentului HTML.\n- Atributul href al tagului <link> trebuie să indice calea către fișierul CSS extern.
     `,
-    link: `https://www.freecodecamp.org/news/how-to-link-css-to-html/`,
   },
   {
     question:
@@ -122,11 +97,8 @@ export const html = [
     option4: "<space>",
     answer: 1,
     explanation: `
-    - Pentru a insera o linie pauză este utilizat tag-ul <br>.\n 
-    - Acesta este un tag auto-închis (self-closing), ceea ce înseamnă că nu are nevoie de un tag de închidere separat.\n 
-    - Atunci când este folosit, <br> determină o întrerupere a liniei curente și continuarea textului pe o nouă linie în interiorul elementului în care este plasat.
+    - Pentru a insera o linie pauză este utilizat tag-ul <br>.\n- Acesta este un tag auto-închis (self-closing), ceea ce înseamnă că nu are nevoie de un tag de închidere separat.\n- Atunci când este folosit, <br> determină o întrerupere a liniei curente și continuarea textului pe o nouă linie în interiorul elementului în care este plasat.
     `,
-    link: `https://www.w3schools.com/tags/tag_br.asp`,
   },
   {
     question: "Cum adaugi culoare de fundal in HTML?",
@@ -136,10 +108,8 @@ export const html = [
     option4: "<background style='yellow'>",
     answer: 1,
     explanation: `
-    - Pentru a adăuga culoare de fundal în HTML, poți folosi atributul style al elementului <body>, care îți permite să aplici stiluri CSS direct (in HTML) pe întregul fundal al paginii.\n 
-    - Atributul style acceptă valori CSS, inclusiv culori. 
+    - Pentru a adăuga culoare de fundal în HTML, poți folosi atributul style al elementului <body>, care îți permite să aplici stiluri CSS direct (in HTML) pe întregul fundal al paginii.\n- Atributul style acceptă valori CSS, inclusiv culori.
     `,
-    link: `https://www.w3schools.com/css/css_howto.asp`,
   },
   {
     question: "Cum poti deschide un link intr-un tab/fereastra noua?",
@@ -149,10 +119,8 @@ export const html = [
     option4: "<a link='url' target='new tab'>",
     answer: 3,
     explanation: `
-    - Atunci când creezi un link către altă pagină web sau resursă, poți utiliza atributul target="_blank" pentru a specifica browserului să deschidă link-ul într-un tab sau fereastră nouă, în loc să înlocuiască pagina curentă.\n
-    - Acest lucru oferă utilizatorului o experiență mai convenabilă, deoarece le permite să revină la pagina originală mai târziu, fără a pierde contextul navigării lor anterioare. 
+    - Atunci când creezi un link către altă pagină web sau resursă, poți utiliza atributul target="_blank" pentru a specifica browserului să deschidă link-ul într-un tab sau fereastră nouă, în loc să înlocuiască pagina curentă.\n- Acest lucru oferă utilizatorului o experiență mai convenabilă, deoarece le permite să revină la pagina originală mai târziu, fără a pierde contextul navigării lor anterioare.
     `,
-    link: `https://www.w3schools.com/tags/att_a_target.asp`,
   },
   {
     question: "Cum poti crea o lista numerotata?",
@@ -162,11 +130,8 @@ export const html = [
     option4: "<ul>",
     answer: 3,
     explanation: `
-    - Pentru a crea o listă numerotată în HTML, folosești elementul <ol>, care este abrevierea de la "ordered list" (listă ordonată).\n
-    - În interiorul acestui element, poți adăuga elemente <li> pentru a reprezenta fiecare punct din listă.\n
-    - Browserul va numerota automat aceste elemente în ordine crescătoare.
+    - Pentru a crea o listă numerotată în HTML, folosești elementul <ol>, care este abrevierea de la "ordered list" (listă ordonată).\n- În interiorul acestui element, poți adăuga elemente <li> pentru a reprezenta fiecare punct din listă.\n- Browserul va numerota automat aceste elemente în ordine crescătoare.
     `,
-    link: `https://www.w3schools.com/tags/tag_ol.asp`,
   },
   {
     question: "Cum poti crea o lista neordonată (cu buline)?",
@@ -176,11 +141,8 @@ export const html = [
     option4: "<ul>",
     answer: 4,
     explanation: `
-    - Pentru a crea o listă neordonată, adică o listă cu buline sau alti marcatori în loc de numere, poți folosi elementul <ul>, care este abrevierea de la "unordered list" (listă neordonată).\n 
-    - În interiorul acestui element poți adăuga elemente <li> pentru a reprezenta fiecare punct din listă.\n
-    - Browserul va afișa automat marcatorii (de obicei buline) în fața fiecărui element din listă.
+    - Pentru a crea o listă neordonată, adică o listă cu buline sau alti marcatori în loc de numere, poți folosi elementul <ul>, care este abrevierea de la "unordered list" (listă neordonată).\n- În interiorul acestui element poți adăuga elemente <li> pentru a reprezenta fiecare punct din listă.\n- Browserul va afișa automat marcatorii (de obicei buline) în fața fiecărui element din listă.
     `,
-    link: `https://www.w3schools.com/tags/tag_ul.asp`,
   },
   {
     question: "Cum se poate crea un input de tip text?",
@@ -190,11 +152,8 @@ export const html = [
     option4: "<input type='text'>",
     answer: 4,
     explanation: `
-    - Pentru a crea un input de tip text în HTML, folosești elementul <input> cu atributul type="text".\n
-    - type="text" specifică că inputul va fi un câmp de introducere de tip text.\n
-    - Pe langa valoarea 'text' a atributului 'type', mai avem: password, email, number, date, checkbox, radio, file, submit.
+    - Pentru a crea un input de tip text în HTML, folosești elementul <input> cu atributul type="text".\n- type="text" specifică că inputul va fi un câmp de introducere de tip text.\n- Pe langa valoarea 'text' a atributului 'type', mai avem: password, email, number, date, checkbox, radio, file, submit.
     `,
-    link: `https://www.w3schools.com/html/html_form_input_types.asp`,
   },
   {
     question:
@@ -205,10 +164,8 @@ export const html = [
     option4: "Nu se stie sigur",
     answer: 1,
     explanation: `
-    - Elementul <iframe> în HTML este folosit pentru a încorpora o altă pagină web în cadrul paginii curente.\n 
-    - Este util pentru afișarea conținutului de la alte site-uri web sau pentru încorporarea unor elemente web externe, cum ar fi hărți, videoclipuri sau alte aplicații web.
+    - Elementul <iframe> în HTML este folosit pentru a încorpora o altă pagină web în cadrul paginii curente.\n- Este util pentru afișarea conținutului de la alte site-uri web sau pentru încorporarea unor elemente web externe, cum ar fi hărți, videoclipuri sau alte aplicații web.
     `,
-    link: `https://www.w3schools.com/html/html_iframe.asp`,
   },
   {
     question: "In HTML, comentariile incp cu <!-- si se termina cu -->",
@@ -218,11 +175,8 @@ export const html = [
     option4: "Nu se poate spune precis",
     answer: 1,
     explanation: `
-    - În HTML, comentariile sunt utilizate pentru a adăuga note sau explicații în codul sursă, care nu sunt afișate în cadrul paginii web vizibile pentru utilizatori.\n 
-    - Comentariile în HTML sunt delimitate de <!-- pentru început și --> pentru sfârșit.\n
-    - Orice text aflat între aceste delimitatoare este tratat ca un comentariu și este ignorat de către browser în momentul afișării paginii web.
+    - În HTML, comentariile sunt utilizate pentru a adăuga note sau explicații în codul sursă, care nu sunt afișate în cadrul paginii web vizibile pentru utilizatori.\n- Comentariile în HTML sunt delimitate de <!-- pentru început și --> pentru sfârșit.\n- Orice text aflat între aceste delimitatoare este tratat ca un comentariu și este ignorat de către browser în momentul afișării paginii web.
     `,
-    link: `https://www.w3schools.com/html/html_comments.asp`,
   },
   {
     question:
@@ -233,10 +187,8 @@ export const html = [
     option4: "title",
     answer: 1,
     explanation: `
-    - Atributul care specifică un text alternativ pentru o imagine atunci când aceasta nu poate fi afișată este 'alt'.\n 
-    - Acest atribut este folosit în tag-ul <img> și permite furnizarea unei descrieri textuale a imaginii, care va fi afișată în locul imaginii (în cazul în care aceasta nu poate fi încărcată sau atunci când utilizatorul utilizează un browser care nu suportă imagini).
+    - Atributul care specifică un text alternativ pentru o imagine atunci când aceasta nu poate fi afișată este 'alt'.\n- Acest atribut este folosit în tag-ul <img> și permite furnizarea unei descrieri textuale a imaginii, care va fi afișată în locul imaginii (în cazul în care aceasta nu poate fi încărcată sau atunci când utilizatorul utilizează un browser care nu suportă imagini).
     `,
-    link: `https://www.w3schools.com/tags/att_img_alt.asp`,
   },
   {
     question: "Ce doctype este corect pentru HTML5?",
@@ -246,11 +198,8 @@ export const html = [
     option4: "<!DOCTYPE new version HTML5>",
     answer: 2,
     explanation: `
-    - Acesta specifică faptul că documentul este scris în conformitate cu standardul HTML5.\n
-    - Este suficient a indica browserului că paginile web trebuie să fie interpretate folosind specificațiile HTML5.\n
-    - Este important să incluzi acest doctype la începutul documentului HTML pentru a asigura interpretarea corectă a codului HTML în toate browserele moderne.
+    - Acesta specifică faptul că documentul este scris în conformitate cu standardul HTML5.\n- Este suficient a indica browserului că paginile web trebuie să fie interpretate folosind specificațiile HTML5.\n- Este important să incluzi acest doctype la începutul documentului HTML pentru a asigura interpretarea corectă a codului HTML în toate browserele moderne.
     `,
-    link: `https://www.w3schools.com/tags/tag_doctype.asp`,
   },
   {
     question:
@@ -261,10 +210,8 @@ export const html = [
     option4: "<footer>",
     answer: 4,
     explanation: `
-    - Elementul <footer> în HTML este utilizat pentru a defini secțiunea de subsol (footer) a unei pagini web.\n
-    - De obicei, acesta conține informații de contact, linkuri utile, drepturi de autor sau alte detalii de fine pagină.
+    - Elementul <footer> în HTML este utilizat pentru a defini secțiunea de subsol (footer) a unei pagini web.\n- De obicei, acesta conține informații de contact, linkuri utile, drepturi de autor sau alte detalii de fine pagină.
     `,
-    link: `https://www.w3schools.com/tags/tag_footer.asp`,
   },
   {
     question: "Elementul <canvas> este utilizat pentru a:",
@@ -274,10 +221,8 @@ export const html = [
     option4: "Crea elemente video sau audio",
     answer: 1,
     explanation: `
-    - Elementul <canvas> în HTML este utilizat pentru a desena grafice, imagini și alte grafice pe o pagină web.\n 
-    - Acesta oferă un spațiu de lucru pentru a desena forme, linii, texte, imagini și alte grafice în mod dinamic.
+    - Elementul <canvas> în HTML este utilizat pentru a desena grafice, imagini și alte grafice pe o pagină web.\n- Acesta oferă un spațiu de lucru pentru a desena forme, linii, texte, imagini și alte grafice în mod dinamic.
     `,
-    link: `https://www.w3schools.com/html/html5_canvas.asp`,
   },
   {
     question:
@@ -288,11 +233,8 @@ export const html = [
     option4: "placeholder",
     answer: 2,
     explanation: `
-    - Atributul required în HTML este utilizat în cadrul elementelor de formular (input) pentru a specifica că un anumit câmp trebuie completat de către utilizator înainte ca formularul să poată fi trimis.\n
-    - Atunci când este adăugat la un element de formular, acesta indică faptul că introducerea unei valori în acel câmp este obligatorie.
-    - Dacă acest câmp este lăsat necompletat și utilizatorul încearcă să trimită formularul, browserul va afișa un mesaj de eroare și nu va permite trimiterea formularului până când câmpul nu este completat.
+    - Atributul required în HTML este utilizat în cadrul elementelor de formular (input) pentru a specifica că un anumit câmp trebuie completat de către utilizator înainte ca formularul să poată fi trimis.\n- Atunci când este adăugat la un element de formular, acesta indică faptul că introducerea unei valori în acel câmp este obligatorie.\n- Dacă acest câmp este lăsat necompletat și utilizatorul încearcă să trimită formularul, browserul va afișa un mesaj de eroare și nu va permite trimiterea formularului până când câmpul nu este completat.
     `,
-    link: `https://www.w3schools.com/tags/att_input_required.asp`,
   },
   {
     question: "Ce element HTML defineste link-uri de nagivare?",
@@ -302,11 +244,8 @@ export const html = [
     option4: "<links>",
     answer: 3,
     explanation: `
-    - Elementul <nav> în HTML este folosit pentru a defini o secțiune de navigare în cadrul unei pagini web.\n 
-    - Acesta este utilizat pentru a grupa linkuri sau alte elemente de navigare care îndrumă utilizatorii către alte pagini sau secțiuni ale paginii curente.\n
-    - De obicei, secțiunea de navigare este plasată în partea de sus a paginii sau într-o parte laterală a acesteia și poate conține linkuri către pagini principale, meniuri drop-down, linkuri către secțiuni ale paginii sau alte elemente de navigare.
+    - Elementul <nav> în HTML este folosit pentru a defini o secțiune de navigare în cadrul unei pagini web.\n- Acesta este utilizat pentru a grupa linkuri sau alte elemente de navigare care îndrumă utilizatorii către alte pagini sau secțiuni ale paginii curente.\n- De obicei, secțiunea de navigare este plasată în partea de sus a paginii sau într-o parte laterală a acesteia și poate conține linkuri către pagini principale, meniuri drop-down, linkuri către secțiuni ale paginii sau alte elemente de navigare.
     `,
-    link: `https://www.w3schools.com/tags/tag_nav.asp`,
   },
   {
     question: "Ce defineste elementul <aside>?",
@@ -317,10 +256,8 @@ export const html = [
     option4: "<aside> nu exista in HTML",
     answer: 3,
     explanation: `
-    - Elementul <aside> în HTML este folosit pentru a defini o secțiune laterală, dar care este în mod tradițional considerată secundară sau suplimentară.\n 
-    - Această secțiune poate conține informații complementare, linkuri, reclame sau alte elemente care nu sunt esențiale pentru înțelegerea conținutului principal al paginii.
+    - Elementul <aside> în HTML este folosit pentru a defini o secțiune laterală, dar care este în mod tradițional considerată secundară sau suplimentară.\n- Această secțiune poate conține informații complementare, linkuri, reclame sau alte elemente care nu sunt esențiale pentru înțelegerea conținutului principal al paginii.
     `,
-    link: `https://www.w3schools.com/tags/tag_aside.asp`,
   },
   {
     question: "Documentele HTML sunt salvate cu extensia:",
@@ -330,12 +267,8 @@ export const html = [
     option4: ".htl",
     answer: 1,
     explanation: `
-    - Extensia comună pentru fișierele HTML este .html.\n
-    - Acesta este standardul pentru fișierele care conțin codul sursă al paginilor web scrise în limbajul de marcare HyperText Markup Language (HTML).\n
-    - Atunci când creezi sau salvezi un fișier HTML, este recomandat să îi atribui această extensie pentru a indica că este vorba despre un fișier de tip HTML.\n
-    - De exemplu, un fișier HTML ar putea fi numit pagina.html.
+    - Extensia comună pentru fișierele HTML este .html.\n- Acesta este standardul pentru fișierele care conțin codul sursă al paginilor web scrise în limbajul de marcare HyperText Markup Language (HTML).\n- Atunci când creezi sau salvezi un fișier HTML, este recomandat să îi atribui această extensie pentru a indica că este vorba despre un fișier de tip HTML.\n- De exemplu, un fișier HTML ar putea fi numit pagina.html.
     `,
-    link: `https://www.geeksforgeeks.org/html-web-page-format/`,
   },
   {
     question: "Care este utilizarea lui <div>?",
@@ -347,7 +280,6 @@ export const html = [
     explanation: `
     - Acesta este un container bloc fără nicio semnificație semantică specifică, ceea ce înseamnă că este folosit pentru a organiza și a structura alte elemente HTML, fără a adăuga vreo informație semnificativă în site.
     `,
-    link: `https://www.w3schools.com/tags/tag_div.ASP`,
   },
   {
     question: "La ce sunt utilizate tag-urile meta?",
@@ -358,10 +290,8 @@ export const html = [
     option4: "Pentru a stoca informatii despre link-uri externe",
     answer: 1,
     explanation: `
-    - Tagurile <meta> în HTML sunt utilizate pentru a furniza metadate suplimentare despre documentul HTML.\n
-    - Aceste metadate nu sunt afișate pe pagină, dar sunt folosite de browsere, motoarele de căutare și alte servicii web pentru a înțelege și a indexa conținutul paginii.
+    - Tagurile <meta> în HTML sunt utilizate pentru a furniza metadate suplimentare despre documentul HTML.\n- Aceste metadate nu sunt afișate pe pagină, dar sunt folosite de browsere, motoarele de căutare și alte servicii web pentru a înțelege și a indexa conținutul paginii.
     `,
-    link: `https://www.w3schools.com/tags/tag_meta.asp`,
   },
   {
     question: "Tag-urile <meta> nu pot fi definite in tag-ul <head>",
@@ -371,11 +301,8 @@ export const html = [
     option4: "Se pot folosi oriunde",
     answer: 1,
     explanation: `
-    - Tagurile <meta> sunt definite în secțiunea <head> a documentului HTML.\n 
-    - Deoarece metadatele nu sunt afișate pe pagină, ele sunt adesea plasate în secțiunea <head>, unde sunt accesibile pentru browsere, motoare de căutare și alte servicii web care analizează conținutul paginii.\n 
-    - Este important să plasezi tagurile <meta> în interiorul secțiunii <head> pentru a asigura că sunt interpretate corect de către browsere și alte agenții care prelucrează paginile web.
+    - Tagurile <meta> sunt definite în secțiunea <head> a documentului HTML.\n- Deoarece metadatele nu sunt afișate pe pagină, ele sunt adesea plasate în secțiunea <head>, unde sunt accesibile pentru browsere, motoare de căutare și alte servicii web care analizează conținutul paginii.\n- Este important să plasezi tagurile <meta> în interiorul secțiunii <head> pentru a asigura că sunt interpretate corect de către browsere și alte agenții care prelucrează paginile web.
     `,
-    link: `https://www.w3schools.com/tags/tag_meta.asp`,
   },
   {
     question: "Cate tag-uri pentru titluri (heading) exista in HTML?",
@@ -385,10 +312,8 @@ export const html = [
     option4: "6",
     answer: 4,
     explanation: `
-    - Tagurile <h1> până la <h6> sunt denumite "heading" sau "titluri" în HTML și sunt utilizate pentru a defini titlurile și subtitlurile unei pagini web sau ale unor secțiuni specifice.\n
-    - Aceste taguri sunt folosite pentru a structura și organiza ierarhic conținutul unei pagini, cu <h1> reprezentând cel mai important titlu și <h6> fiind cel mai puțin important titlu.
+    - Tagurile <h1> până la <h6> sunt denumite "heading" sau "titluri" în HTML și sunt utilizate pentru a defini titlurile și subtitlurile unei pagini web sau ale unor secțiuni specifice.\n- Aceste taguri sunt folosite pentru a structura și organiza ierarhic conținutul unei pagini, cu <h1> reprezentând cel mai important titlu și <h6> fiind cel mai puțin important titlu.
     `,
-    link: `https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements`,
   },
   {
     question: "Paginile create in HTML se mai numesc si:",
@@ -398,12 +323,8 @@ export const html = [
     option4: "Niciun raspuns din cele de mai sus",
     answer: 1,
     explanation: `
-    - Paginile create în HTML sunt numite și pagini web.\n
-    - HTML (HyperText Markup Language) este limbajul de marcare standard folosit pentru a crea pagini web.\n
-    - Atunci când creezi un document HTML și îl publici pe internet, acesta devine o pagină web accesibilă pentru utilizatori pe web.\n
-    - O pagină web poate conține diverse tipuri de conținut, inclusiv text, imagini, videoclipuri, formulare și multe altele, toate structurate și formatate utilizând HTML.
+    - Paginile create în HTML sunt numite și pagini web.\n- HTML (HyperText Markup Language) este limbajul de marcare standard folosit pentru a crea pagini web.\n- Atunci când creezi un document HTML și îl publici pe internet, acesta devine o pagină web accesibilă pentru utilizatori pe web.\n- O pagină web poate conține diverse tipuri de conținut, inclusiv text, imagini, videoclipuri, formulare și multe altele, toate structurate și formatate utilizând HTML.
     `,
-    link: `https://www.w3schools.com/howto/howto_create_and_view.asp`,
   },
   {
     question: "Ce tehnologie este folosita pentru a stiliza paginile HTML?",
@@ -413,11 +334,8 @@ export const html = [
     option4: "XML",
     answer: 2,
     explanation: `
-    - Cascading Style Sheets (CSS) este un limbaj de stilizare folosit pentru a formata și a stiliza aspectul și prezentarea paginilor web create în HTML și alte limbaje de marcare.\n 
-    - CSS oferă o serie de reguli și proprietăți care permit controlul precis al aspectului elementelor HTML, cum ar fi fonturile, culorile, dimensiunile, spațiile între elemente și multe altele.\n
-    - Utilizând CSS, este posibil să se creeze aspecte și design-uri variate, adaptate nevoilor și preferințelor utilizatorilor, pentru o experiență de navigare mai plăcută și eficientă pe web.
+    - Cascading Style Sheets (CSS) este un limbaj de stilizare folosit pentru a formata și a stiliza aspectul și prezentarea paginilor web create în HTML și alte limbaje de marcare.\n- CSS oferă o serie de reguli și proprietăți care permit controlul precis al aspectului elementelor HTML, cum ar fi fonturile, culorile, dimensiunile, spațiile între elemente și multe altele.\n- Utilizând CSS, este posibil să se creeze aspecte și design-uri variate, adaptate nevoilor și preferințelor utilizatorilor, pentru o experiență de navigare mai plăcută și eficientă pe web.
     `,
-    link: `https://medium.com/@rafath_87861/importance-of-css-in-web-development-5f63b9987176`,
   },
   {
     question: "Care dintre urmatoarele functioneaza similar cu elementul <b>?",
@@ -427,11 +345,8 @@ export const html = [
     option4: "<block>",
     answer: 1,
     explanation: `
-    - Tagurile <b> și <strong> sunt folosite pentru a evidenția textul în cadrul unei pagini web, însă ele au semnificații diferite din punct de vedere semantic și pot fi stilizate diferit prin intermediul CSS.\n
-    - Tagul <b> (bold) este folosit pentru a face textul să apară bold, indicând astfel o importanță vizuală, fără a adăuga neapărat o semnificație semantică specială.\n
-    - Tagul <strong> este folosit pentru a evidenția textul ca fiind semnificativ sau important din punct de vedere semantic.
+    - Tagurile <b> și <strong> sunt folosite pentru a evidenția textul în cadrul unei pagini web, însă ele au semnificații diferite din punct de vedere semantic și pot fi stilizate diferit prin intermediul CSS.\n- Tagul <b> (bold) este folosit pentru a face textul să apară bold, indicând astfel o importanță vizuală, fără a adăuga neapărat o semnificație semantică specială.\n- Tagul <strong> este folosit pentru a evidenția textul ca fiind semnificativ sau important din punct de vedere semantic.
     `,
-    link: `https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong`,
   },
   {
     question:
@@ -442,10 +357,8 @@ export const html = [
     option4: "unique",
     answer: 2,
     explanation: `
-    - Atributul 'id' este utilizat pentru a furniza un identificator unic pentru un element de pe pagină.\n
-    - Acest identificator trebuie să fie unic în cadrul întregii pagini web și poate fi utilizat pentru a selecta și a stiliza elementul respectiv folosind CSS sau pentru a accesa și manipula elementul folosind JavaScript.
+    - Atributul 'id' este utilizat pentru a furniza un identificator unic pentru un element de pe pagină.\n- Acest identificator trebuie să fie unic în cadrul întregii pagini web și poate fi utilizat pentru a selecta și a stiliza elementul respectiv folosind CSS sau pentru a accesa și manipula elementul folosind JavaScript.
     `,
-    link: `https://www.w3schools.com/html/html_id.asp`,
   },
   {
     question: "Valoarea initiala (default) a atributului 'target' este:",
@@ -455,11 +368,8 @@ export const html = [
     option4: "_blank",
     answer: 1,
     explanation: `
-    - Valoarea implicită (default) a atributului target pentru tag-urile <a> în este _self.\n
-    - Atunci când acest atribut nu este specificat, linkul va fi deschis în fereastra sau tab-ul curent al browserului, peste conținutul curent al paginii.\n
-    - Pentru a specifica un comportament diferit de deschidere a linkului, se poate folosi atributul 'target'cu o altă valoare, cum ar fi '_blank' pentru a deschide linkul într-un tab sau fereastră nouă,
+    - Valoarea implicită (default) a atributului target pentru tag-urile <a> în este _self.\n- Atunci când acest atribut nu este specificat, linkul va fi deschis în fereastra sau tab-ul curent al browserului, peste conținutul curent al paginii.\n- Pentru a specifica un comportament diferit de deschidere a linkului, se poate folosi atributul 'target'cu o altă valoare, cum ar fi '_blank' pentru a deschide linkul într-un tab sau fereastră nouă,
     `,
-    link: `https://www.freecodecamp.org/news/the-a-target-html-attribute-explained/`,
   },
   {
     question:
@@ -470,11 +380,8 @@ export const html = [
     option4: "Niciuna din cele de mai sus",
     answer: 1,
     explanation: `
-    - Elementul <p> în HTML este folosit pentru a defini un paragraf de text.\n
-    - Fiecare paragraf este afișat pe o linie nouă și este separat de celelalte elemente de pe pagină.\n
-    - Este important să folosești elementul <p> pentru a marca conținutul textului care face parte din diferite paragrafe, pentru a asigura o structură semantică și accesibilitate corespunzătoare a paginii web.
+    - Elementul <p> în HTML este folosit pentru a defini un paragraf de text.\n- Fiecare paragraf este afișat pe o linie nouă și este separat de celelalte elemente de pe pagină.\n- Este important să folosești elementul <p> pentru a marca conținutul textului care face parte din diferite paragrafe, pentru a asigura o structură semantică și accesibilitate corespunzătoare a paginii web.
     `,
-    link: `https://www.w3schools.com/tags/tag_p.asp`,
   },
   {
     question: "Care dintre urmatoarele nu este un Browser Web?",
@@ -486,7 +393,6 @@ export const html = [
     explanation: `
     - Google este cunoscut în primul rând pentru motorul său de căutare pe internet, care este unul dintre cele mai utilizate și cunoscute motoare de căutare din lume.
     `,
-    link: `https://en.wikipedia.org/wiki/Google`,
   },
   {
     question: "Tag-ul <a> vine de la:",
@@ -496,10 +402,8 @@ export const html = [
     option4: "Alert Tag",
     answer: 1,
     explanation: `
-    - Tagul <a> în HTML este folosit pentru a crea un link către alte pagini web, fișiere, adrese de e-mail, locații în cadrul aceleiași pagini sau alte resurse online.\n
-    - Acesta permite utilizatorilor să navigheze între diferite pagini web și să acceseze conținut relevant prin intermediul hyperlink-urilor.
+    - Tagul <a> în HTML este folosit pentru a crea un link către alte pagini web, fișiere, adrese de e-mail, locații în cadrul aceleiași pagini sau alte resurse online.\n- Acesta permite utilizatorilor să navigheze între diferite pagini web și să acceseze conținut relevant prin intermediul hyperlink-urilor.
     `,
-    link: `https://www.w3schools.com/tags/tag_a.asp`,
   },
   {
     question: "Tag-ul ..... defineste o imagine intr-o pagina HTML.",
@@ -509,10 +413,8 @@ export const html = [
     option4: "<img>",
     answer: 4,
     explanation: `
-    - Tagul <img> în HTML este folosit pentru a încărca și afișa imagini pe o pagină web.\n
-    - Acesta permite includerea de imagini statice, cum ar fi fotografii, ilustrații sau grafice, în cadrul conținutului HTML al paginii.
+    - Tagul <img> în HTML este folosit pentru a încărca și afișa imagini pe o pagină web.\n- Acesta permite includerea de imagini statice, cum ar fi fotografii, ilustrații sau grafice, în cadrul conținutului HTML al paginii.
     `,
-    link: `https://www.w3schools.com/tags/tag_img.asp`,
   },
   {
     question: "Atributul ..... este folosit pentru a afisa o imagine.",
@@ -522,11 +424,8 @@ export const html = [
     option4: "src",
     answer: 4,
     explanation: `
-    - În HTML, atributul 'src' este folosit în tagul <img> pentru a preciza calea către fișierul imagine pe care browserul trebuie să îl încarce și să îl afișeze pe pagină.\n
-    - Acest atribut este esențial atunci când adăugăm imagini într-o pagină web.\n
-    - Acesta poate fi un URL absolut (în cazul în care imaginea este găzduită pe un alt server web) sau un URL relativ (în cazul în care imaginea se află în același director sau într-un subdirector al paginii HTML).
+    - În HTML, atributul 'src' este folosit în tagul <img> pentru a preciza calea către fișierul imagine pe care browserul trebuie să îl încarce și să îl afișeze pe pagină.\n- Acest atribut este esențial atunci când adăugăm imagini într-o pagină web.\n- Acesta poate fi un URL absolut (în cazul în care imaginea este găzduită pe un alt server web) sau un URL relativ (în cazul în care imaginea se află în același director sau într-un subdirector al paginii HTML).
     `,
-    link: `https://www.w3schools.com/html/html_images.asp`,
   },
   {
     question: "Ce tag este folosit pentru a crea un rand intr-un tabel?",
@@ -536,10 +435,8 @@ export const html = [
     option4: "<row>",
     answer: 3,
     explanation: `
-    - Tagul <tr> în HTML este utilizat pentru a defini o rând (linie) în cadrul unei tabele.\n
-    - Acesta marchează o serie de celule care se află pe aceeași linie în cadrul unei tabele, organizând astfel datele într-o structură tabulară.
+    - Tagul <tr> în HTML este utilizat pentru a defini o rând (linie) în cadrul unei tabele.\n- Acesta marchează o serie de celule care se află pe aceeași linie în cadrul unei tabele, organizând astfel datele într-o structură tabulară.
     `,
-    link: `https://www.w3schools.com/tags/tag_tr.asp`,
   },
   {
     question: "Ce reprezinta tag-ul <code>?",
@@ -549,11 +446,8 @@ export const html = [
     option4: "JavaScript",
     answer: 1,
     explanation: `
-    - Tagul <code> în HTML este utilizat pentru a formata textul ca și cod sursă sau fragmente de cod.\n
-    - Acesta este folosit pentru a evidenția și a distinge fragmentele de cod de textul comun al unei pagini web.\n
-    - Atunci când este utilizat, browserul va afișa textul din interiorul tagului <code> folosind un font diferit, ceea ce face codul să fie ușor de citit și de identificat.
+    - Tagul <code> în HTML este utilizat pentru a formata textul ca și cod sursă sau fragmente de cod.\n- Acesta este folosit pentru a evidenția și a distinge fragmentele de cod de textul comun al unei pagini web.\n- Atunci când este utilizat, browserul va afișa textul din interiorul tagului <code> folosind un font diferit, ceea ce face codul să fie ușor de citit și de identificat.
     `,
-    link: `https://www.w3schools.com/tags/tag_code.asp`,
   },
   {
     question: "Ce reprezinta tag-ul <abbr>?",
@@ -563,10 +457,8 @@ export const html = [
     option4: "Un comentariu",
     answer: 1,
     explanation: `
-    - Tagul <abbr> în HTML este utilizat pentru a defini o abreviere sau un acronim în cadrul textului.\n
-    - Acesta este folosit pentru a specifica o abreviere și pentru a furniza o explicație sau o descriere a acesteia, care poate fi afișată atunci când utilizatorul plasează cursorul mouse-ului deasupra abrevierii.
+    - Tagul <abbr> în HTML este utilizat pentru a defini o abreviere sau un acronim în cadrul textului.\n- Acesta este folosit pentru a specifica o abreviere și pentru a furniza o explicație sau o descriere a acesteia, care poate fi afișată atunci când utilizatorul plasează cursorul mouse-ului deasupra abrevierii.
     `,
-    link: `https://www.w3schools.com/tags/tag_abbr.asp`,
   },
   {
     question: "Care sunt caracteristicile introduse in HTML5?",
@@ -576,10 +468,8 @@ export const html = [
     option4: "S-a adaugat posibilitatea de a adauga cod JavaScript",
     answer: 3,
     explanation: `
-    - HTML5 a adus o serie de caracteristici noi și îmbunătățiri semnificative față de versiunile anterioare ale limbajului HTML.\n
-    - Printre acestea se numără introducerea următoarelor elemente: header, footer, nav, article, section, audio, video, canvas.
+    - HTML5 a adus o serie de caracteristici noi și îmbunătățiri semnificative față de versiunile anterioare ale limbajului HTML.\n- Printre acestea se numără introducerea următoarelor elemente: header, footer, nav, article, section, audio, video, canvas.
     `,
-    link: `https://www.geeksforgeeks.org/top-10-new-features-of-html5/`,
   },
   {
     question: "Care sunt diferentele dintre tag-ul <span> si <div>?",
@@ -589,11 +479,8 @@ export const html = [
     option4: "<span> este un element bloc, iar <div> este un element inline",
     answer: 1,
     explanation: `
-    - Diferența principală între tagurile <div> și <span> constă în scopul lor și modul în care sunt afișate pe pagină.\n
-    - <div> este un element de nivel bloc folosit pentru a grupa și a organiza alte elemente HTML, în timp ce <span> este un element de nivel inline utilizat pentru a marca porțiuni mici de text sau alte elemente inline, cărora dorim să le aplicăm un stil sau să le manipulăm individual.\n
-    - În esență, <div> este folosit pentru structurare, în timp ce <span> este folosit pentru formatare la nivel de text.
+    - Diferența principală între tagurile <div> și <span> constă în scopul lor și modul în care sunt afișate pe pagină.\n- <div> este un element de nivel bloc folosit pentru a grupa și a organiza alte elemente HTML, în timp ce <span> este un element de nivel inline utilizat pentru a marca porțiuni mici de text sau alte elemente inline, cărora dorim să le aplicăm un stil sau să le manipulăm individual.\n- În esență, <div> este folosit pentru structurare, în timp ce <span> este folosit pentru formatare la nivel de text.
     `,
-    link: `https://www.freecodecamp.org/news/span-vs-div-html-tags-what-is-the-difference/`,
   },
   {
     question: "La ce este util '!DOCTYPE'?",
@@ -604,11 +491,8 @@ export const html = [
     option4: "Ajuta la conectarea documentului CSS si JavaScript",
     answer: 2,
     explanation: `
-    - <!DOCTYPE> este o instrucțiune specială în HTML care este utilizată pentru a informa browserul despre tipul de document pe care îl citește.\n
-    - Aceasta indică versiunea de HTML utilizată în document și ajută la asigurarea că browserul va interpreta și va afișa corect conținutul paginii web conform specificațiilor HTML.\n
-    - Definirea corectă a DOCTYPE-ului este importantă pentru ca browserul să afișeze corect conținutul paginii și să aplice corect regulile de interpretare a documentului HTML.
+    - <!DOCTYPE> este o instrucțiune specială în HTML care este utilizată pentru a informa browserul despre tipul de document pe care îl citește.\n- Aceasta indică versiunea de HTML utilizată în document și ajută la asigurarea că browserul va interpreta și va afișa corect conținutul paginii web conform specificațiilor HTML.\n- Definirea corectă a DOCTYPE-ului este importantă pentru ca browserul să afișeze corect conținutul paginii și să aplice corect regulile de interpretare a documentului HTML.
     `,
-    link: `https://www.w3schools.com/tags/tag_doctype.asp`,
   },
   {
     question: "Ce este un SVG",
@@ -619,10 +503,8 @@ export const html = [
       "SGV-uri sunt folosite pentru a crea si descrie grafica vectoriala bidimensionala",
     answer: 4,
     explanation: `
-    - Elementul <svg> (Scalable Vector Graphics) este folosit pentru a încorpora și a afișa grafică SVG în cadrul paginilor web.\n
-    - Acesta poate conține elemente SVG, cum ar fi linii, cercuri, pătrate, texte și alte forme, precum și atribute care controlează aspectul și comportamentul acestora.
+    - Elementul <svg> (Scalable Vector Graphics) este folosit pentru a încorpora și a afișa grafică SVG în cadrul paginilor web.\n- Acesta poate conține elemente SVG, cum ar fi linii, cercuri, pătrate, texte și alte forme, precum și atribute care controlează aspectul și comportamentul acestora.
     `,
-    link: `https://www.w3schools.com/html/html5_svg.asp`,
   },
   {
     question: "Ce sunt elementele void in HTML?",
@@ -633,11 +515,8 @@ export const html = [
       "Sunt elemente care ajuta conectarea paginii la documentul JavaScript",
     answer: 1,
     explanation: `
-    - În HTML, există o categorie de elemente cunoscute sub numele de "elemente vid" (void elements).\n
-    - Acestea sunt elemente care nu au conținut și nu necesită un tag de închidere separat.\n
-    - Ele sunt utilizate pentru a furniza informații despre elementele autonome sau pentru a introduce anumite funcționalități în pagină.
+    - În HTML, există o categorie de elemente cunoscute sub numele de "elemente vid" (void elements).\n- Acestea sunt elemente care nu au conținut și nu necesită un tag de închidere separat.\n- Ele sunt utilizate pentru a furniza informații despre elementele autonome sau pentru a introduce anumite funcționalități în pagină.
     `,
-    link: `https://developer.mozilla.org/en-US/docs/Glossary/Void_element`,
   },
   {
     question: "Care dintre urmatoarele sunt tag-uri void in HTML?",
@@ -647,11 +526,8 @@ export const html = [
     option4: "<main />",
     answer: 3,
     explanation: `
-    - În HTML, există o categorie de elemente cunoscute sub numele de "elemente vid" (void elements).\n
-    - Acestea sunt elemente care nu au conținut și nu necesită un tag de închidere separat.\n
-    - Ele sunt utilizate pentru a furniza informații despre elementele autonome sau pentru a introduce anumite funcționalități în pagină.
+    - În HTML, există o categorie de elemente cunoscute sub numele de "elemente vid" (void elements).\n- Acestea sunt elemente care nu au conținut și nu necesită un tag de închidere separat.\n- Ele sunt utilizate pentru a furniza informații despre elementele autonome sau pentru a introduce anumite funcționalități în pagină.
     `,
-    link: `https://developer.mozilla.org/en-US/docs/Glossary/Void_element`,
   },
   {
     question: "Care este diferenta dintre <link> si <a>?",
@@ -663,10 +539,8 @@ export const html = [
     option4: "Aceste tag-uri nu exista in HTML",
     answer: 1,
     explanation: `
-    - În HTML, <a> (anchor) este folosit pentru a crea hyperlink-uri vizibile care permit navigarea între pagini.\n
-    - <link> este utilizat pentru a conecta pagini web la alte resurse externe, cum ar fi fișiere CSS, fără a crea un hyperlink vizibil pe pagină.
+    - În HTML, <a> (anchor) este folosit pentru a crea hyperlink-uri vizibile care permit navigarea între pagini.\n- <link> este utilizat pentru a conecta pagini web la alte resurse externe, cum ar fi fișiere CSS, fără a crea un hyperlink vizibil pe pagină.
     `,
-    link: `https://www.tutorialspoint.com/difference-between-link-and-anchor-tags`,
   },
   {
     question:
@@ -677,10 +551,8 @@ export const html = [
     option4: "HTML4",
     answer: 3,
     explanation: `
-    - HTML5 a adus o serie de caracteristici noi și îmbunătățiri semnificative față de versiunile anterioare ale limbajului HTML.\n
-    - Printre acestea se numără introducerea următoarelor elemente: header, footer, nav, article, section, audio, video, canvas.
+    - HTML5 a adus o serie de caracteristici noi și îmbunătățiri semnificative față de versiunile anterioare ale limbajului HTML.\n- Printre acestea se numără introducerea următoarelor elemente: header, footer, nav, article, section, audio, video, canvas.
     `,
-    link: `https://www.geeksforgeeks.org/top-10-new-features-of-html5/`,
   },
   {
     question: "Ce atribut HTML este folosit pentru a utiliza stilurile inline?",
@@ -690,10 +562,8 @@ export const html = [
     option4: "class",
     answer: 2,
     explanation: `
-    - Stilurile inline în HTML sunt definite direct în atributul style al unui element HTML, permițând aplicarea stilurilor direct pe elementul respectiv.\n
-    - Acest lucru este util atunci când dorim să aplicăm stiluri specifice unui singur element, fără a crea sau a folosi fișiere CSS separate.
+    - Stilurile inline în HTML sunt definite direct în atributul style al unui element HTML, permițând aplicarea stilurilor direct pe elementul respectiv.\n- Acest lucru este util atunci când dorim să aplicăm stiluri specifice unui singur element, fără a crea sau a folosi fișiere CSS separate.
     `,
-    link: `https://www.codecademy.com/article/html-inline-styles`,
   },
   {
     question: "Este recomandat sa incluzi doar un singur <h1> in pagina web?",
@@ -702,10 +572,7 @@ export const html = [
     option3: `Nu exista o regula clara`,
     option4: `Trebuie incluse cat mai multe tag-uri <h1>`,
     answer: 1,
-    explanation: `- Un singur element <h1> pe pagina web este o practică recomandată deoarece promovează o structură web clară și sănătoasă.\n
-      - Oferă beneficii pentru SEO, accesibilitate și experiența utilizatorului.\n
-      - Un singur <h1> clarifică subiectul principal al paginii pentru motoarele de căutare, ajută utilizatorii de cititoare de ecran să navigheze și creează o ierarhie vizuală distinctă, îmbunătățind scanabilitatea paginii.`,
-    link: `https://www.quora.com/Why-should-we-only-use-only-1-H1-header-on-a-page`,
+    explanation: `- Un singur element <h1> pe pagina web este o practică recomandată deoarece promovează o structură web clară și sănătoasă.\n- Oferă beneficii pentru SEO, accesibilitate și experiența utilizatorului.\n- Un singur <h1> clarifică subiectul principal al paginii pentru motoarele de căutare, ajută utilizatorii de cititoare de ecran să navigheze și creează o ierarhie vizuală distinctă, îmbunătățind scanabilitatea paginii.`,
   },
   {
     question: "Care este scopul atributului 'async' in tag-urile script?",
@@ -717,7 +584,6 @@ export const html = [
     explanation: `
       - Atributul "async" din tag-urile HTML script este utilizat pentru a incarca scriptul in mod asincron, permitand browserului sa continue analizarea si redarea continutului HTML fara a astepta incarcarea sau executarea scriptului.
       `,
-    link: `https://www.w3schools.com/tags/att_script_async.asp`,
   },
   {
     question:
@@ -728,10 +594,8 @@ export const html = [
     option4: `url`,
     answer: 2,
     explanation: `
-      - In HTML, atributul 'href' este folosit pentru a specifica URL-ul paginii unde dorim sa mergem.\n
-      - In plus, daca este setat si atributul target="_blank", link-ul se va deschide intr-un tab nou.
+      - In HTML, atributul 'href' este folosit pentru a specifica URL-ul paginii unde dorim sa mergem.\n- In plus, daca este setat si atributul target="_blank", link-ul se va deschide intr-un tab nou.
       `,
-    link: `https://www.w3schools.com/tags/att_a_href.asp`,
   },
 ];
 

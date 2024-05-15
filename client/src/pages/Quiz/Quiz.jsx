@@ -190,22 +190,24 @@ const Quiz = () => {
         <div className="exlanation-wrapper">
           <div className="explanation-container">
             <div className="explanation-nav">
-              <Link className="link-btn" to="/">
+              <Link className="link-btn home" to="/">
                 Alege alta tehnologie
               </Link>
             </div>
             <div className="explanation-text">
               {showExplanation && (
-                <TypeWriterEffect
-                  textStyle={{
-                    fontFamily: "Poppins",
-                    fontSize: 16,
-                    fontWeight: 400,
-                  }}
-                  text={question.explanation}
-                  typeSpeed={30}
-                  hideCursorAfterText={true}
-                />
+                <p className="display-linebreak">
+                  <TypeWriterEffect
+                    textStyle={{
+                      fontFamily: "Poppins",
+                      fontSize: 16,
+                      fontWeight: 400,
+                    }}
+                    text={question.explanation}
+                    typeSpeed={30}
+                    hideCursorAfterText={true}
+                  />
+                </p>
               )}
             </div>
           </div>
