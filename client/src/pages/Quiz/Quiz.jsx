@@ -1,9 +1,9 @@
 import React, { useRef, useState } from "react";
 import "./Quiz.scss";
-// import the questions
-import { html, css, javascript } from "../../utils/data";
+// import data
+import { html, css, javascript, links } from "../../utils/data";
 // React Router DOM
-import { Link, useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 // Code snippet
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
@@ -13,6 +13,8 @@ import ConfettiExplosion from "react-confetti-explosion";
 import TypeWriterEffect from "react-typewriter-effect";
 
 const Quiz = () => {
+  const navigate = useNavigate();
+
   const params = useParams();
   const paramNumber = params["tehnologie"];
 
@@ -110,6 +112,11 @@ const Quiz = () => {
     setResult(false);
   };
 
+  const redirectToPage = (page) => {
+    navigate(page); // Redirecționează utilizatorul către pagina specificată
+    window.location.reload();
+  };
+
   return (
     <div className="quiz">
       {result && (
@@ -129,9 +136,10 @@ const Quiz = () => {
               </div>
             ) : (
               <>
-                <h2>
-                  {questionCount}/15. {question.question}
-                </h2>
+                <div className="question-title">
+                  <h3>{questionCount}/15.</h3>
+                  <h3>{question.question}</h3>
+                </div>
                 {question.code && (
                   <div className="code-snippet">
                     <SyntaxHighlighter
@@ -189,14 +197,30 @@ const Quiz = () => {
 
         <div className="exlanation-wrapper">
           <div className="explanation-container">
-            <div className="explanation-nav">
-              <Link className="link-btn home" to="/">
-                Alege alta tehnologie
-              </Link>
-            </div>
+            <ul className="explanation-nav">
+              <li key={index}>
+                <button
+                  onClick={() => redirectToPage(`/`)}
+                  className="link-btn home"
+                >
+                  Acasă
+                </button>
+              </li>
+              {links.map((link, index) => (
+                <li key={index}>
+                  <button
+                    onClick={() => redirectToPage(`${link.link}`)}
+                    className="link-btn"
+                  >
+                    {link.name}
+                  </button>
+                </li>
+              ))}
+            </ul>
+
             <div className="explanation-text">
               {showExplanation && (
-                <p className="display-linebreak">
+                <div className="display-linebreak">
                   <TypeWriterEffect
                     textStyle={{
                       fontFamily: "Poppins",
@@ -207,7 +231,7 @@ const Quiz = () => {
                     typeSpeed={30}
                     hideCursorAfterText={true}
                   />
-                </p>
+                </div>
               )}
             </div>
           </div>

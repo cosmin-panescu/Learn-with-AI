@@ -1543,3 +1543,18 @@ export const javascript = [
     answer: 4,
   },
 ];
+
+export const links = [
+  {
+    name: "HTML",
+    link: "/test/1",
+  },
+  {
+    name: "CSS",
+    link: "/test/2",
+  },
+  {
+    name: "JavaScript",
+    link: "/test/3",
+  },
+];

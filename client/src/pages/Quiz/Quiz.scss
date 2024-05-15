@@ -49,8 +49,8 @@
       flex: 1;
 
       .explanation-container {
-        background-image: linear-gradient(#ffffff 1.4rem, #ccc 1.5rem);
-        background-size: 100% 1.5rem;
+        background-image: linear-gradient(#ffffff 1.6rem, #ccc 1.7rem);
+        background-size: 100% 1.7rem;
         position: relative;
         width: 85%;
         min-height: 85vh;
@@ -58,11 +58,50 @@
         border-radius: 10px;
         box-shadow: 1px 0px 26px 17px rgba(0, 0, 0, 1);
 
+        .explanation-nav {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          list-style: none;
+          margin-top: 16px;
+
+          li {
+            .link-btn {
+              border: none;
+              outline: none;
+              color: #191a1a;
+              cursor: pointer;
+              font-size: 1.15rem;
+              font-weight: 500;
+              padding: 0 7px;
+              background: linear-gradient(
+                to bottom,
+                transparent 50%,
+                lightgreen 50%
+              );
+              transition: all 0.2s ease;
+
+              &.home {
+                background: linear-gradient(
+                  to bottom,
+                  transparent 50%,
+                  lightblue 50%
+                );
+              }
+
+              &:hover {
+                border-radius: 10px;
+              }
+            }
+          }
+        }
+
         .explanation-text {
           width: 100%;
           height: 100%;
-          margin-top: 86.6px;
-          line-height: 24px;
+          margin-top: 62px;
+          line-height: 27.1px;
           text-indent: 10px;
         }
       }
@@ -109,8 +148,17 @@
           font-size: 14px;
         }
 
-        h2 {
-          font-size: 20px;
+        .question-title {
+          display: flex;
+          gap: 15px;
+          border-bottom: 2px solid rgba(128, 128, 128, 0.216);
+          padding-bottom: 10px;
+
+          h3 {
+            font-size: 18px;
+            line-height: 23px;
+            font-weight: 600;
+          }
         }
 
         ul {
@@ -152,34 +200,6 @@
           border-color: lightcoral;
         }
       }
-    }
-  }
-}
-
-// button
-.quiz {
-  .link-btn {
-    color: #191a1a;
-    cursor: pointer;
-    font-size: 1.15rem;
-    font-weight: 500;
-    position: absolute;
-    padding: 0 5px;
-    border-bottom: 12px solid rgba(144, 238, 144, 0.582);
-    line-height: 10%;
-    transition: all 0.25s ease;
-
-    &.home {
-      top: 39.5px;
-    }
-
-    &.learn {
-      bottom: 32px;
-      padding: 0px;
-    }
-
-    &:hover {
-      border-bottom: 12px solid lightgreen;
     }
   }
 }
