@@ -27,7 +27,7 @@ body {
 
 @media screen and (max-width: 525px) {
   .container {
-    margin: 0 2rem;
+    margin: 0 0.75rem;
   }
 }
 
@@ -124,4 +124,25 @@ body {
 
 .second-btn:active .button-top {
   transform: translateY(0);
+}
+
+/* MEDIA QUERIS */
+@media screen and (max-width: 768px) {
+  .main-btn {
+    font-size: 11px;
+  }
+
+  .second-btn {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 432px) {
+  .main-btn {
+    font-size: 10px;
+  }
+
+  .second-btn {
+    font-size: 12px;
+  }
 }

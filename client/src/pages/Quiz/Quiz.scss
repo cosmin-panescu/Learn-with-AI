@@ -238,6 +238,7 @@
       .exlanation-wrapper {
         display: flex;
         justify-content: center;
+
         .explanation-container {
           width: 80%;
         }
@@ -289,6 +290,20 @@
 
           ul li {
             font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .quiz {
+    .wrapper {
+      .exlanation-wrapper {
+        .explanation-container {
+          .explanation-text {
+            margin-top: 50px;
           }
         }
       }
