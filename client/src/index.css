@@ -15,6 +15,28 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.container {
+  margin: 0 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 0 3rem;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .container {
+    margin: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .container {
+    margin: 0rem;
+  }
+}
+
 /* Scrollbar styles */
 ::-webkit-scrollbar {
   width: 12.5px;
@@ -73,7 +95,6 @@ body {
 }
 
 /* SECONDARY BUTTON */
-
 .second-btn {
   --button_radius: 0.75em;
   --button_color: #f6f6f6;

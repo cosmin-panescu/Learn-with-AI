@@ -8,7 +8,7 @@ const Header = () => {
 
   return (
     <div className="header">
-      <div className="content">
+      <div className="content container">
         <h1>
           <span className="gradient">&lt; AI</span>
           nterviu
@@ -16,7 +16,9 @@ const Header = () => {
         </h1>
 
         {/* <h2>Exersează pentru următorul tău interviu tehnic! 👨‍💻</h2> */}
-        <h2>Platforma care te antreneaza pentru urmatorul tau interviu in IT! 👨‍💻</h2>
+        <h2>
+          Platforma care te antrenează pentru următorul tău interviu în IT! 👨‍💻
+        </h2>
 
         <button className="main-btn">
           <span onClick={handleScroll}>Să începem!</span>

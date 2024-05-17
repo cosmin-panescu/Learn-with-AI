@@ -68,17 +68,20 @@
       font-weight: 400;
       font-size: 18px;
       line-height: 30px;
-      margin-top: 34.5px;
+      margin-top: 31px;
       height: 95px;
     }
 
     h3 {
       font-family: "Kalam", sans-serif;
       font-size: 1.85rem;
-      margin-top: 7px;
+      margin-top: 3.5px;
+      line-height: 30px;
     }
 
     & > div {
+      display: flex;
+      flex-direction: column;
       box-shadow: 1px 0px 26px 17px rgba(0, 0, 0, 1);
       margin-top: 20px;
       padding: 35px 15px 30px 60px;
@@ -114,6 +117,136 @@
       display: flex;
       gap: 20px;
       flex-wrap: wrap;
+    }
+  }
+}
+
+// MEDIA QUERIS
+@media screen and (max-width: 1275px) {
+  .services {
+    padding: 100px 50px 0 50px;
+    height: max-content;
+
+    .description {
+      height: max-content;
+
+      h2 {
+        font-size: 1.8rem;
+        margin: 0 2rem;
+      }
+
+      p {
+        font-size: 1.4rem;
+      }
+    }
+
+    .content {
+      flex-wrap: wrap;
+      gap: 50px;
+
+      .service-description {
+        margin-top: 31px;
+      }
+
+      h3 {
+        font-size: 1.75rem;
+        margin-top: 4px;
+      }
+
+      & > div {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .services {
+    min-height: 100vh;
+    padding: 5rem 0;
+    gap: 5rem;
+
+    .description {
+      h2 {
+        font-size: 1.6rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+        width: 90%;
+      }
+    }
+
+    .content {
+      flex-wrap: wrap;
+      gap: 50px;
+
+      h3 {
+        font-size: 1.5rem;
+      }
+
+      & > div {
+        width: 80%;
+        border-radius: 7px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .services {
+    .description {
+      h2 {
+        font-size: 1.25rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+      }
+    }
+
+    .content {
+      h3 {
+        font-size: 1.2rem;
+      }
+
+      .service-description {
+        font-size: 1rem;
+      }
+
+      & > div {
+        padding: 35px 15px 30px 45px;
+        background-image: linear-gradient(
+            90deg,
+            transparent 30px,
+            #ffb4b8 30px,
+            #ffb4b8 32px,
+            transparent 32px
+          ),
+          linear-gradient(#e1e1e1 0.1em, transparent 0.1em);
+
+        width: 90%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .services {
+    .description {
+      h2 {
+        margin: 0 15px;
+      }
+    }
+
+    .content {
+      h3 {
+        font-size: 1.2rem;
+      }
+
+      .service-description {
+        font-size: 1rem;
+      }
     }
   }
 }

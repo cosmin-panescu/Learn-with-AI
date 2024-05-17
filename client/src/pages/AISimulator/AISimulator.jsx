@@ -94,7 +94,7 @@ const AISimulator = () => {
           </div>
 
           <Link className="link-btn tab link" to="/">
-            Acasa
+            Acasă
           </Link>
         </div>
 

@@ -6,26 +6,26 @@ import { links } from "../../utils/data";
 const Services = () => {
   return (
     <div className="services" id="services">
-      <div className="description">
+      <div className="description container">
         <h2>Alege modul de exersare cel mai potrivit pentru tine. 😄 </h2>
         <p className="description-text">
-          Nu iti face griji! Fie ca raspunzi{" "}
+          Nu îți face griji! Fie că răspunzi{" "}
           <span className="correct">corect</span> sau{" "}
-          <span className="wrong">nu</span>, vei primi si explicatia conceptului
-          respectiv, astfel incat sa inveti in procesul de exersare.
+          <span className="wrong">nu</span>, vei primi și explicația conceptului
+          respectiv, astfel încât să înveți în procesul de exersare.
         </p>
       </div>
 
-      <div className="content">
+      <div className="content container">
         <div className="left">
           <h3>Întrebări cu răspuns multiplu</h3>
           <p className="service-description">
-            • 150+ intrebari
-            <br />• explicatie pentru fiecare intrebare
+            • 150+ întrebări
+            <br />• explicație pentru fiecare întrebare
           </p>
           <div className="links">
             {links.map((link, index) => (
-              <Link id={index} className="link-btn second-btn" to={link.link}>
+              <Link key={index} className="link-btn second-btn" to={link.link}>
                 <span className="button-top">{link.name}</span>
               </Link>
             ))}

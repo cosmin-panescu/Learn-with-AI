@@ -40,9 +40,8 @@
     align-items: center;
 
     h1 {
-      font-family: "Poppins", sans-serif;
       font-style: normal;
-      font-size: 7em;
+      font-size: 7vw;
       text-align: center;
 
       .gradient {
@@ -63,17 +62,68 @@
     }
 
     h2 {
-      font-size: 1.75rem;
+      text-align: center;
+      font-size: 2vw;
       font-weight: 300;
     }
   }
 }
 
+// KEYFRAMES
 @keyframes animate {
   0% {
     background-position: 0%;
   }
   100% {
     background-position: 400%;
+  }
+}
+
+// MEDIA QUERIS
+@media screen and (max-width: 1150px) {
+  .header {
+    .content {
+      h1 {
+        font-size: 9vw;
+      }
+
+      h2 {
+        font-size: 2.5vw;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    // padding: 0 3rem;
+
+    .content {
+      h1 {
+        font-size: 10vw;
+      }
+
+      h2 {
+        margin-top: 2rem;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .header {
+    // padding: 0 2rem;
+
+    .content {
+      h1 {
+        font-size: 11vw;
+      }
+
+      h2 {
+        margin-top: 2rem;
+        font-size: 0.9rem;
+      }
+    }
   }
 }
