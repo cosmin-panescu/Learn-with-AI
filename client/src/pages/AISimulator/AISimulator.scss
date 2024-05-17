@@ -240,3 +240,61 @@
     background-position: -100% 0;
   }
 }
+
+// MEDIA QUERIS
+@media screen and (max-width: 1150px) {
+  .simulator {
+    &-chat {
+      width: 85%;
+
+      .chat-content {
+        .chat-messages {
+          .message {
+            .message-text {
+              h4 {
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .simulator {
+    &-chat {
+      width: 95%;
+
+      .chat-content {
+        .chat-messages {
+          .message {
+            .message-text {
+              font-size: 14px;
+
+              p {
+                font-weight: 200;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .simulator {
+    &-chat {
+      .chat-bar {
+        .tab {
+          margin-left: 5px;
+          width: 100px;
+          font-size: 12px;
+          padding-left: 7px;
+        }
+      }
+    }
+  }
+}

@@ -5,8 +5,11 @@ import "./AISimulator.scss";
 // user and interviewer avatars
 import ai_avatar from "../../resources/ai.png";
 import user_avatar from "../../resources/user.png";
+// custom hook for storing the screen size
+import useScreenWidth from "../../customHooks/useScreenWidth";
 
 const AISimulator = () => {
+  const isSmallScreen = useScreenWidth();
   // store current message
   const [message, setMessage] = useState("");
   // handle loading the answer from AI
@@ -104,12 +107,14 @@ const AISimulator = () => {
               (msg, index) =>
                 (msg.role === "user" || msg.role === "assistant") && (
                   <div key={index} className="message">
-                    <div className="message-avatar">
-                      <img
-                        src={msg.role === "user" ? user_avatar : ai_avatar}
-                        alt={msg.role === "user" ? "TU" : "A.I."}
-                      />
-                    </div>
+                    {!isSmallScreen && (
+                      <div className="message-avatar">
+                        <img
+                          src={msg.role === "user" ? user_avatar : ai_avatar}
+                          alt={msg.role === "user" ? "TU" : "A.I."}
+                        />
+                      </div>
+                    )}
                     <div
                       className={
                         msg.role === "assistant"
