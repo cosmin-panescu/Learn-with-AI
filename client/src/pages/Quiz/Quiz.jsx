@@ -124,7 +124,7 @@ const Quiz = () => {
           <ConfettiExplosion particleCount={200} duration={4000} />
         </div>
       )}
-      <div className="wrapper">
+      <div className="wrapper container">
         <div className="quiz-wrapper">
           <div className="quiz-container">
             {result ? (

@@ -1483,9 +1483,9 @@ export const javascript = [
   {
     question: "Ce va afisa in consola codul de mai jos?",
     code: `
-    console.log(typeof 1);
-    console.log(typeof String);
-    console.log(typeof typeof 1);
+console.log(typeof 1);
+console.log(typeof String);
+console.log(typeof typeof 1);
   `,
     option1: `"number", "function", "string"`,
     option2: `"number", "string", "number"`,

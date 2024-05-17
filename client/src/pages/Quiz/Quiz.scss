@@ -5,7 +5,6 @@
   align-items: center;
   min-height: 100vh;
   width: 100%;
-  height: 100%;
   --color: rgba(114, 114, 114, 0.3);
   background-color: #191a1a;
   background-image: linear-gradient(
@@ -40,7 +39,6 @@
   }
 
   .wrapper {
-    margin: 50px 100px;
     display: flex;
     gap: 100px;
     width: 100%;
@@ -61,6 +59,8 @@
         .explanation-nav {
           width: 100%;
           display: flex;
+          flex-wrap: wrap;
+          gap: 15px;
           justify-content: space-between;
           align-items: center;
           list-style: none;
@@ -99,7 +99,6 @@
 
         .explanation-text {
           width: 100%;
-          height: 100%;
           margin-top: 62px;
           line-height: 27.1px;
           text-indent: 10px;
@@ -206,4 +205,120 @@
 
 .display-linebreak {
   white-space: pre-line;
+}
+
+// MEDIA QUERIS
+@media screen and (max-width: 1150px) {
+  .quiz {
+    .wrapper {
+      gap: 40px;
+
+      .exlanation-wrapper {
+        .explanation-container {
+          width: 100%;
+        }
+      }
+
+      .quiz-wrapper {
+        .quiz-container {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .quiz {
+    .wrapper {
+      margin-top: 2.5rem;
+      margin-bottom: 2.5rem;
+      flex-direction: column;
+
+      .exlanation-wrapper {
+        display: flex;
+        justify-content: center;
+        .explanation-container {
+          width: 80%;
+        }
+      }
+
+      .quiz-wrapper {
+        justify-content: center;
+
+        .quiz-container {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .quiz {
+    .wrapper {
+      .exlanation-wrapper {
+        .explanation-container {
+          width: 100%;
+        }
+      }
+
+      .quiz-wrapper {
+        .quiz-container {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .quiz {
+    .wrapper {
+      .quiz-wrapper {
+        .quiz-container {
+          .question-title {
+            h3 {
+              font-size: 16px;
+            }
+          }
+
+          .code-snippet {
+            font-size: 13px;
+          }
+
+          ul li {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .quiz {
+    .wrapper {
+      .quiz-wrapper {
+        .quiz-container {
+          padding: 15px;
+
+          .question-title {
+            h3 {
+              font-size: 16px;
+            }
+          }
+
+          .code-snippet {
+            font-size: 13px;
+          }
+
+          ul li {
+            padding: 7.5px;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
 }
