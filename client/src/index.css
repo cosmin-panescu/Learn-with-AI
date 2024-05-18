@@ -139,10 +139,10 @@ body {
 
 @media screen and (max-width: 432px) {
   .main-btn {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .second-btn {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
