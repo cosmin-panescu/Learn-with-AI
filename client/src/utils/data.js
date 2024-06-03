@@ -179,6 +179,18 @@ export const html = [
     `,
   },
   {
+    question: "Care este scopul meta tag-ului 'viewport' in HTML?",
+    option1: "Specifica tipul caracterelor din document",
+    option2: "Seteaza culoarea de fundal a paginii web",
+    option3: "Defineste zona vizibila a paginii web pe diferite device-uri",
+    option4: "Include librarii JavaScript externe",
+    answer: 3,
+    explanation: `
+    - Tag-ul meta 'viewport' este folosit in HTML pentru a defini zona vizibila a paginii web pe diferite dispozitive.
+    - Astfel, ofera control dezvoltatorilor asupra dimensiunii initiale, latimii si layout-ului continutului de pe pagina web, pentru o vizualizare optima a acesteia.
+    `,
+  },
+  {
     question:
       "Ce atribut HTML specifica un text alternativ pentru o imagine, atunci cand aceasta nu poate fi afisata?",
     option1: "alt",
@@ -346,6 +358,18 @@ export const html = [
     answer: 1,
     explanation: `
     - Tagurile <b> și <strong> sunt folosite pentru a evidenția textul în cadrul unei pagini web, însă ele au semnificații diferite din punct de vedere semantic și pot fi stilizate diferit prin intermediul CSS.\n- Tagul <b> (bold) este folosit pentru a face textul să apară bold, indicând astfel o importanță vizuală, fără a adăuga neapărat o semnificație semantică specială.\n- Tagul <strong> este folosit pentru a evidenția textul ca fiind semnificativ sau important din punct de vedere semantic.
+    `,
+  },
+  {
+    question:
+      "Ce element HTML5 este utilizat pentru a defini link-uri de navigare?",
+    option1: "<nav>",
+    option2: "<header>",
+    option3: "<section>",
+    option4: "<article>",
+    answer: 1,
+    explanation: `
+    - tag-ul <nav> reprezinta o sectiune a paginii care contine link-urile pentru navigare, precum link-uri catre alte pagini sau catre diferite sectiuni din pagina curenta.
     `,
   },
   {
@@ -672,6 +696,22 @@ export const css = [
       "Pentru a specifica transparenta pentru fundalul unui elemet, poti folosi keyword-ul 'transparent' cu proprietatea 'background-color'. Astfel, fundalul unui element va fi complet transparent.",
   },
   {
+    question:
+      "Ce proprietate CSS folosesti pentru a crea spatiu intre continutul unui element si bordura (border) acestuia?",
+    option1: `margin`,
+    option2: `spacing`,
+    option3: `padding`,
+    option4: `border-spacing`,
+    answer: 3,
+    explanation: `
+    - Proprietatea padding este utilizata pentru a oferi spatiu intre continutul unui element si bordrura acestuia.
+    - Defineste dimensiunea spatiului de langa element.
+    - 'margin' ofera spatiu in afara bordurii unui element.
+    - 'border-spacing' este utilizat pentru a seta distanta dintre bordura si celulele adiacente ale unui tabel.
+    - 'spacing' nu este o proprietate valida in CSS. 
+    `,
+  },
+  {
     question: "In ce ordine vor fi adaugate marginile?",
     code: `
     p {
@@ -712,6 +752,18 @@ export const css = [
       `,
   },
   {
+    question: "Care este rolul layout-ului GRID?",
+    option1: `De a crea design responsive si layout flexibil de tip grid`,
+    option2: `De a anima elementele de pe site`,
+    option3: `De a manipula structuri de date in JavaScript`,
+    option4: `De a optimiza interogari ale bazelor de date`,
+    answer: 1,
+    explanation: `
+      - In CSS, 'grid' este utilizat pentru a realiza un design responsive si flexibil din punct de vedere al asezarii elementelor in pagina web.
+      - Permite dezvoltatorilor sa creeze design-uri complexe, oferind control precis asupra elementelor paginii web.
+      `,
+  },
+  {
     question: "Ce proprietate CSS este folosita pentru a face textul bold?",
     option1: `text-decoration: bold;`,
     option2: `font-weight: bold;`,
@@ -733,6 +785,19 @@ export const css = [
       `,
   },
   {
+    question: "Catre cine face referire pseudo selectorul ':nth-child:(2n+1)?",
+    option1: `Catre toate elementele copil de pe pozitii pare ale unui element parinte`,
+    option2: `Catre toate elementele copil de pe pozitii impare ale unui element parinte`,
+    option3: `Catre al doilea element copil al unui element parinte `,
+    option4: `Catre fiecare al treilea element copil dintr-un element parinte`,
+    answer: 2,
+    explanation: `
+    - Selectorul pseudo nth-child:(2n+1) tinteste catre toate elementele copil de pe pozitii impare.
+    - Expresia 2n+1 genereaza un sir de numere care incepe cu 1 (numerele impare: 1, 3, 5, 7, ...), facand referire la toate elementele copil care se afla pe aceste pozitii.
+    - Este util atunci cand vrei sa aplici stiluri elementelor copil de pe anumite pozitii.
+      `,
+  },
+  {
     question: "Ce metode sunt folosite pentru a reprezenta culori in CSS?",
     option1: `Numele culorii`,
     option2: `Valori RGB`,
@@ -749,7 +814,39 @@ export const css = [
     option3: `#`,
     option4: `Nicio varianta nu este corecta`,
     answer: 1,
-    explanation: `Pentru a marca un comentariu in CSS, folosim /* */.`,
+    explanation: `
+    - Pentru a marca un comentariu in CSS, folosim /* */.
+    `,
+  },
+  {
+    question:
+      "Ce proprietate si valoare CSS folosesti pentru a face culaorea unui text complet opaca/transparenta?",
+    option1: `color: rgba(0, 0, 0, 0);`,
+    option2: `color: rgba(0, 0, 0, 1);`,
+    option3: `color: rgba(0, 0, 0, 0.5);`,
+    option4: `color: rgba(255, 255, 255, 0);`,
+    answer: 1,
+    explanation: `
+    - In functia 'rgba', valoarea alpha '1' face culoarea complet opaca / transparenta.
+    `,
+  },
+  {
+    question: "Care va fi rezultatul urmatorului cod CSS?",
+    code: `
+    body {
+      color: rgb(255, 255, 255);
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    `,
+    option1: `Text alb cu un fundal complet transparent`,
+    option2: `Text negru cu un fundal complet transparent`,
+    option3: `Text negru cu un fundal transparent pe jumatate`,
+    option4: `Text alb cu un fundal transparent pe jumatate`,
+    answer: 4,
+    explanation: `
+    - color: rgb(255, 255, 255) seteaza culoarea textului la alb.
+    - background-color: rgba(0, 0, 0, 0.5) seteaza fundalul ca fiind negru, cu o transparenta/opacitate de 50% (adica la jumatate).
+    `,
   },
   {
     question:
@@ -798,6 +895,31 @@ export const css = [
     - Selectorul CSS 'id' poate fi utilizat pentru a selecta doar un singur element, astfel incat sa ii aplicam doar lui un anumit stil.
     - Selectorul 'id' foloseste atributul 'id' asupra elementelor HTML pentru a le oferi caracterul de unicitate. 
     - Pentru a selecta un element cu un id specific, folosim caracterul'#', urmat de numele id-ului pe care l-am specificat in interiorul tag-ului HTML.
+    `,
+  },
+  {
+    question:
+      "Cum creezi o bordura (border) de 2 pixeli, linie continua (solida), albastra?",
+    option1: `border: solid blue 2px;`,
+    option2: `border: 2px solid blue;`,
+    option3: `border: blue solid 2px;`,
+    option4: `border: 2px blue solid;`,
+    answer: 2,
+    explanation: `
+    - Ordinea corecta pentru scurtatura proprietatii border este: latime, stil, culoare.
+    - Deci, ordinea corecta a valorilor este: 2px (latime), solid (stil/tip), blue (culoare). 
+    `,
+  },
+  {
+    question:
+      "Cum aplici o margine de 20 de pixeli pentru top si bottom, iar pentru stanga si dreapta o margine de 10 pixeli?",
+    option1: `margin: 20px 10px;`,
+    option2: `margin: 10px 20px;`,
+    option3: `margin: 20px 0 10px 0;`,
+    option4: `margin: 10px 20px 10px 20px;`,
+    answer: 1,
+    explanation: `
+    - Cand folosesti doua valori pentru proprietatea margin, prima valoarea seteaza marginea de sus si de jos (top & bottom), iar a doua valoarea seteaza marginea pentru partea stanga si dreapta (left & right).
     `,
   },
 ];
@@ -928,6 +1050,63 @@ export const javascript = [
       "Prima data se afiseaza 2 (din console.log(2)). Apoi, desi are un delay de doar 0ms, 4 este afisat inaintea lui 3 deoarece JavaScript executa setTimeout() dupa ce restul codului este este rulat. Deci, prima data sunt afisate valorile din afara lui setTimeout(), iar apoi, in functie de marimea delay-ului, se vor afisa si celelalte valori, care sunt executate in mod asincron (deoarece setTimeout() este o functie asincrona).",
   },
   {
+    question:
+      "Ce tip de variabila este vizibil doar in functia unde este definita variabila?",
+    option1: `Variabilele globale`,
+    option2: `Variabilele locale`,
+    option3: `Ambele variante`,
+    option4: `Nicio varianta`,
+    answer: 2,
+    explanation: `
+    - O variabila locala este vizibila doar in functia in care este definita.
+    - O variabila globala este vizibila si disponibila oriunde in program, dupa locul in care a fost declarata.
+    `,
+  },
+  {
+    question: "Care este diferenta dintre 'let' si 'const'?",
+    option1: `Variabilelor 'let' li se pot reatribui valori, in timp ce variabilele 'const' sunt imutabile`,
+    option2: `Variabilelor 'const' li se pot reatribui valori, in timp ce variabilele 'let' sunt imutabile`,
+    option3: `Variabilele 'let' sunt hoistate, spre deosebire de variabilele 'const'`,
+    option4: `Nu exista nicio diferenta intre cele doua.`,
+    answer: 1,
+    explanation: `
+    - In JavaScript, variabilele declarate cu 'let' pot primi alte valori (valoarea lor poate fi schimbata dupa definirea initiala), in timp ce variabilele declarate cu 'const' sunt imutabile, adica valoarea lor nu poate fi schimbata odata ce a fost deja initializata.
+    `,
+  },
+  {
+    question: "Care va fi rezultatul codului?",
+    code: `
+    console.log(typeof null);
+    `,
+    option1: `null`,
+    option2: `undefined `,
+    option3: `object`,
+    option4: `string`,
+    answer: 3,
+    explanation: `
+    - In JavaScript, operatorul 'typeof' returneaza un string care indica tipul unui operand.
+    - Din anumite motive, 'typeof null' returneaza 'object', insemnand ca 'null' este un obiect.
+    - Desi valoarea 'null' reprezinta absenta unei valori sau a unei valori obiect, este totusi considerat de tip obiect (object). 
+    `,
+  },
+  {
+    question: "Care va fi rezultatul codului?",
+    code: `
+    let x = 5;
+    x = 10;
+    console.log(x);
+    `,
+    option1: `5`,
+    option2: `undefined `,
+    option3: `Error`,
+    option4: `10`,
+    answer: 4,
+    explanation: `
+    - Variabilele declarate cu 'let' pot primi alta valoare dupa ce au fost initializate initial.
+    - Deci, valoarea lui 'x' este schimbata in 10 inainte de a fi afisata cu 'console.log(x)';
+    `,
+  },
+  {
     question: "Care va fi rezultatul?",
     code: `
     function height() {
@@ -960,6 +1139,38 @@ export const javascript = [
     - concat() creează un șir sau un array nou care conține elementele combinate pe care le specificam.
     - este o metodă versatilă pentru a combina valorile șirurilor sau array-urilor.
     - șirurile sau array-urile originale rămân neschimbate.`,
+  },
+  {
+    question: "Care va fi rezultatul urmatoarei comparatii in JavaScript?",
+    code: `
+    5 == "5"
+    `,
+    option1: `true`,
+    option2: `false`,
+    option3: `Error`,
+    option4: `NaN`,
+    answer: 1,
+    explanation: `
+    - Operatorul == compara valoarea operanzilor, facand si conversia daca este necesar.
+    - In cazul nostru, sirul de caractere (string) "5" este convertit la numere inainte de comparatie.
+    - Deci, intr-un final, se vor compara doua numere: 5 == 5, rezultand "True".
+    `,
+  },
+  {
+    question: "Care va fi rezultatul urmatorului cod?",
+    code: `
+    let x;
+    console.log(x);
+    `,
+    option1: `null`,
+    option2: `0`,
+    option3: `NaN`,
+    option4: `undefined`,
+    answer: 4,
+    explanation: `
+    - Cand o variabila este declarata, dar nu initializata, valoarea ei este 'undefined' (nedefinit).
+    - Deci, console.log(x) va afisa 'undefined', deoarece variabila nu este definita.
+    `,
   },
   {
     question: "Care este numele intreg pentru NaN, in JavaScript?",
@@ -1283,6 +1494,30 @@ export const javascript = [
     - Setand lungimea array-ului ca fiind 0, 'golim' array-ul.
     - Dupa haine.length = 0, array-ul haine va fi gol.
     - Deci, accesand primul element (haine[0]), va fi returnat 'undefined', deoarece nu este niciun element definit la index-ul 0 din array.
+    `,
+  },
+  {
+    question: "La ce se refera termenul de 'functie callback' in JavaScript?",
+    option1: `O functie care se apeleaza singura, in mod recursiv`,
+    option2: `O functie trecuta ca argument unei alte functii, pentru a fi executata mai tarziu`,
+    option3: `O functie care declanseaza evenimente bazate pe interactiunile utilizatorului`,
+    option4: `O functie care genereaza numere aleatorii`,
+    answer: 2,
+    explanation: `
+    - O functie callback se refera la o functie 'oferita' ca argument unei alte functii, cu scopul de a fi executata mai tarziu.
+    - De cele mai multe ori, aceste functii sunt utilizate pentru operatii asincrone sau pentru manipularea evenimentelor (events).
+    `,
+  },
+  {
+    question: "Ce face operatorul 'spread' (...) in JavaScript?",
+    option1: `Concateneaza doua array-uri`,
+    option2: `Copiaza proprietatile unui obiect in alt obiect`,
+    option3: `Converteste un sir de caractere intr-un array de caractere`,
+    option4: `Operatorul 'spread' nu este specific JavaScript`,
+    answer: 2,
+    explanation: `
+    - Operatorul 'spread', ... , este o caracteristica variantei JavaScript ES6.
+    - Este folosit pentru a crea o copie a unui obiect sau array. 
     `,
   },
   {
